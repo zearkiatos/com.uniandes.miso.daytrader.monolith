@@ -53,6 +53,10 @@ public class DTBroker3MDB implements MessageListener {
     public MessageDrivenContext mdc;
 
     public DTBroker3MDB() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTBroker3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTBroker3MDB::DTBroker3MDB()|");
+
         if (Log.doTrace()) {
             Log.trace("DTBroker3MDB:DTBroker3MDB()");
         }
@@ -60,10 +64,20 @@ public class DTBroker3MDB implements MessageListener {
             statInterval = 10000;
         }
         mdbStats = MDBStats.getInstance();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTBroker3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTBroker3MDB::DTBroker3MDB()|");
+}
+}
 
     @Override
     public void onMessage(Message message) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTBroker3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTBroker3MDB::onMessage(Message)|");
+
         try {
             if (Log.doTrace()) {
                 Log.trace("TradeBroker:onMessage -- received message -->" + ((TextMessage) message).getText() + "command-->"
@@ -145,9 +159,19 @@ public class DTBroker3MDB implements MessageListener {
             Log.error("DTBroker3MDB: Error rolling back transaction", t);
             mdc.setRollbackOnly();
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTBroker3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTBroker3MDB::onMessage(Message)|");
+}
+}
 
     private TradeServices getTrade(boolean direct) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTBroker3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTBroker3MDB::getTrade(boolean)|");
+
         TradeServices trade;
         if (direct) {
             trade = new TradeDirect();
@@ -156,6 +180,12 @@ public class DTBroker3MDB implements MessageListener {
         }
 
         return trade;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTBroker3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTBroker3MDB::getTrade(boolean)|");
+}
+}
 
 }

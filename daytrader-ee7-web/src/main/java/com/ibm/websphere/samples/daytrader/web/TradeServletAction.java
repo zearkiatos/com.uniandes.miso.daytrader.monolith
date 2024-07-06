@@ -51,8 +51,18 @@ public class TradeServletAction {
     private TradeServices tAction = null;
 
     TradeServletAction() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::TradeServletAction()|");
+
         tAction = new TradeAction();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::TradeServletAction()|");
+}
+}
 
     /**
      * Display User Profile information such as address, email, etc. for the
@@ -78,6 +88,10 @@ public class TradeServletAction {
      */
     void doAccount(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String results) throws javax.servlet.ServletException,
             java.io.IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doAccount(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+
         try {
 
             AccountDataBean accountData = tAction.getAccountData(userID);
@@ -102,7 +116,13 @@ public class TradeServletAction {
             throw new ServletException("TradeServletAction.doAccount(...)" + " exception user =" + userID, e);
         }
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doAccount(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+}
+}
 
     /**
      * Update User Profile information such as address, email, etc. for the
@@ -138,6 +158,10 @@ public class TradeServletAction {
      */
     void doAccountUpdate(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String password, String cpassword,
             String fullName, String address, String creditcard, String email) throws javax.servlet.ServletException, java.io.IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doAccountUpdate(ServletContext, HttpServletRequest, HttpServletResponse, String, String, String, String, String, String, String)|");
+
         String results = "";
 
         // First verify input data
@@ -167,7 +191,13 @@ public class TradeServletAction {
             throw new ServletException("TradeServletAction.doAccountUpdate(...)" + " exception user =" + userID, e);
         }
         doAccount(ctx, req, resp, userID, results);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doAccountUpdate(ServletContext, HttpServletRequest, HttpServletResponse, String, String, String, String, String, String, String)|");
+}
+}
 
     /**
      * Buy a new holding of shares for the given trader Dispatch to the Trade
@@ -194,6 +224,10 @@ public class TradeServletAction {
      */
     void doBuy(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String symbol, String quantity) throws ServletException,
             IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doBuy(ServletContext, HttpServletRequest, HttpServletResponse, String, String, String)|");
+
 
         String results = "";
 
@@ -215,7 +249,13 @@ public class TradeServletAction {
             throw new ServletException("TradeServletAction.buy(...)" + " exception buying stock " + symbol + " for user " + userID, e);
         }
         requestDispatch(ctx, req, resp, userID, TradeConfig.getPage(TradeConfig.ORDER_PAGE));
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doBuy(ServletContext, HttpServletRequest, HttpServletResponse, String, String, String)|");
+}
+}
 
     /**
      * Create the Trade Home page with personalized information such as the
@@ -239,6 +279,10 @@ public class TradeServletAction {
      */
     void doHome(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String results) throws javax.servlet.ServletException,
             java.io.IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doHome(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+
 
         try {
             AccountDataBean accountData = tAction.getAccountData(userID);
@@ -281,7 +325,13 @@ public class TradeServletAction {
         }
 
         requestDispatch(ctx, req, resp, userID, TradeConfig.getPage(TradeConfig.HOME_PAGE));
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doHome(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+}
+}
 
     /**
      * Login a Trade User. Dispatch to the Trade Home JSP for display
@@ -308,6 +358,10 @@ public class TradeServletAction {
      */
     void doLogin(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String passwd) throws javax.servlet.ServletException,
             java.io.IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doLogin(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+
 
         String results = "";
         try {
@@ -346,7 +400,13 @@ public class TradeServletAction {
 
         requestDispatch(ctx, req, resp, userID, TradeConfig.getPage(TradeConfig.WELCOME_PAGE));
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doLogin(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+}
+}
 
     /**
      * Logout a Trade User Dispatch to the Trade Welcome JSP for display
@@ -370,6 +430,10 @@ public class TradeServletAction {
      *
      */
     void doLogout(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doLogout(ServletContext, HttpServletRequest, HttpServletResponse, String)|");
+
         String results = "";
 
         try {
@@ -408,7 +472,13 @@ public class TradeServletAction {
             session = req.getSession(true);
         }
         requestDispatch(ctx, req, resp, userID, TradeConfig.getPage(TradeConfig.WELCOME_PAGE));
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doLogout(ServletContext, HttpServletRequest, HttpServletResponse, String)|");
+}
+}
 
     /**
      * Retrieve the current portfolio of stock holdings for the given trader
@@ -433,6 +503,10 @@ public class TradeServletAction {
      *
      */
     void doPortfolio(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String results) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doPortfolio(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+
 
         try {
             // Get the holdiings for this user
@@ -469,7 +543,13 @@ public class TradeServletAction {
             // log the exception with error page
             throw new ServletException("TradeServletAction.doPortfolio(...)" + " exception user =" + userID, e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doPortfolio(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+}
+}
 
     /**
      * Retrieve the current Quote for the given stock symbol Dispatch to the
@@ -491,6 +571,10 @@ public class TradeServletAction {
      *
      */
     void doQuotes(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String symbols) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doQuotes(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+
 
         // Edge Caching:
         // Getting Quotes has been moved to the JSP
@@ -500,7 +584,13 @@ public class TradeServletAction {
         //
 
         requestDispatch(ctx, req, resp, userID, TradeConfig.getPage(TradeConfig.QUOTE_PAGE));
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doQuotes(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+}
+}
 
     /**
      * Register a new trader given the provided user Profile information such as
@@ -536,6 +626,10 @@ public class TradeServletAction {
      */
     void doRegister(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String passwd, String cpasswd, String fullname,
             String ccn, String openBalanceString, String email, String address) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doRegister(ServletContext, HttpServletRequest, HttpServletResponse, String, String, String, String, String, String, String, String)|");
+
         String results = "";
 
         try {
@@ -566,7 +660,13 @@ public class TradeServletAction {
             // log the exception with error page
             throw new ServletException("TradeServletAction.doRegister(...)" + " exception user =" + userID, e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doRegister(ServletContext, HttpServletRequest, HttpServletResponse, String, String, String, String, String, String, String, String)|");
+}
+}
 
     /**
      * Sell a current holding of stock shares for the given trader. Dispatch to
@@ -592,6 +692,10 @@ public class TradeServletAction {
      *
      */
     void doSell(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, Integer holdingID) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doSell(ServletContext, HttpServletRequest, HttpServletResponse, String, Integer)|");
+
         String results = "";
         try {
             OrderDataBean orderData = tAction.sell(userID, holdingID, TradeConfig.orderProcessingMode);
@@ -609,23 +713,59 @@ public class TradeServletAction {
             throw new ServletException("TradeServletAction.doSell(...)" + " exception selling holding " + holdingID + " for user =" + userID, e);
         }
         requestDispatch(ctx, req, resp, userID, TradeConfig.getPage(TradeConfig.ORDER_PAGE));
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doSell(ServletContext, HttpServletRequest, HttpServletResponse, String, Integer)|");
+}
+}
 
     void doWelcome(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String status) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doWelcome(ServletContext, HttpServletRequest, HttpServletResponse, String)|");
+
 
         req.setAttribute("results", status);
         requestDispatch(ctx, req, resp, null, TradeConfig.getPage(TradeConfig.WELCOME_PAGE));
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doWelcome(ServletContext, HttpServletRequest, HttpServletResponse, String)|");
+}
+}
 
     private void requestDispatch(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID, String page) throws ServletException,
             IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::requestDispatch(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+
 
         ctx.getRequestDispatcher(page).include(req, resp);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::requestDispatch(ServletContext, HttpServletRequest, HttpServletResponse, String, String)|");
+}
+}
 
     void doMarketSummary(ServletContext ctx, HttpServletRequest req, HttpServletResponse resp, String userID) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doMarketSummary(ServletContext, HttpServletRequest, HttpServletResponse, String)|");
+
         req.setAttribute("results", "test");
         requestDispatch(ctx, req, resp, userID, TradeConfig.getPage(TradeConfig.MARKET_SUMMARY_PAGE));
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java::com.ibm.websphere.samples.daytrader.web.TradeServletAction::doMarketSummary(ServletContext, HttpServletRequest, HttpServletResponse, String)|");
+}
+}
 }

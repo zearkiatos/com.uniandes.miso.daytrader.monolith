@@ -58,8 +58,18 @@ public class PingJDBCRead extends HttpServlet {
      */
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::doPost(HttpServletRequest, HttpServletResponse)|");
+
         doGet(req, res);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * this is the main method of the servlet that will service all get
@@ -72,6 +82,10 @@ public class PingJDBCRead extends HttpServlet {
      **/
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::doGet(HttpServletRequest, HttpServletResponse)|");
+
         res.setContentType("text/html");
         java.io.PrintWriter out = res.getWriter();
         String symbol = null;
@@ -102,7 +116,13 @@ public class PingJDBCRead extends HttpServlet {
             res.sendError(500, "PingJDBCRead Exception caught: " + e.toString());
         }
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * returns a string of information about the servlet
@@ -111,8 +131,18 @@ public class PingJDBCRead extends HttpServlet {
      **/
     @Override
     public String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::getServletInfo()|");
+
         return "Basic JDBC Read using a prepared statment, makes use of TradeJDBC class";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::getServletInfo()|");
+}
+}
 
     /**
      * called when the class is loaded to initialize the servlet
@@ -122,8 +152,18 @@ public class PingJDBCRead extends HttpServlet {
      **/
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::init(ServletConfig)|");
+
         super.init(config);
         hitCount = 0;
         initTime = new java.util.Date().toString();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCRead.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCRead::init(ServletConfig)|");
+}
+}
 }

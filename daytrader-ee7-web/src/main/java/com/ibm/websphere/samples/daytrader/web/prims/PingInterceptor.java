@@ -35,8 +35,18 @@ public class PingInterceptor implements Serializable {
 
     @AroundInvoke
     public Object methodInterceptor(InvocationContext ctx) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingInterceptor.java::com.ibm.websphere.samples.daytrader.web.prims.PingInterceptor::methodInterceptor(InvocationContext)|");
+
 
         //noop
         return ctx.proceed();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingInterceptor.java::com.ibm.websphere.samples.daytrader.web.prims.PingInterceptor::methodInterceptor(InvocationContext)|");
+}
+}
 }

@@ -36,8 +36,18 @@ public class TestServlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::init(ServletConfig)|");
+
         super.init(config);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::init(ServletConfig)|");
+}
+}
 
     /**
      * Process incoming HTTP GET requests
@@ -49,8 +59,18 @@ public class TestServlet extends HttpServlet {
      */
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::doGet(HttpServletRequest, HttpServletResponse)|");
+
         performTask(request, response);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * Process incoming HTTP POST requests
@@ -62,8 +82,18 @@ public class TestServlet extends HttpServlet {
      */
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::doPost(HttpServletRequest, HttpServletResponse)|");
+
         performTask(request, response);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * Main service method for TradeAppServlet
@@ -74,6 +104,10 @@ public class TestServlet extends HttpServlet {
      *            Object that encapsulates the response from the servlet
      */
     public void performTask(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::performTask(HttpServletRequest, HttpServletResponse)|");
+
         try {
             Log.debug("Enter TestServlet doGet");
             TradeConfig.runTimeMode = TradeConfig.DIRECT;
@@ -107,5 +141,11 @@ public class TestServlet extends HttpServlet {
         } catch (Exception e) {
             Log.error("TestServletException", e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TestServlet.java::com.ibm.websphere.samples.daytrader.web.TestServlet::performTask(HttpServletRequest, HttpServletResponse)|");
+}
+}
 }

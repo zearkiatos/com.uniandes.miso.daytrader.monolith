@@ -33,6 +33,10 @@ public class TradeWebContextListener implements ServletContextListener {
     // TradeDirect
     @Override
     public void contextInitialized(ServletContextEvent event) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeWebContextListener.java::com.ibm.websphere.samples.daytrader.web.TradeWebContextListener::contextInitialized(ServletContextEvent)|");
+
         Log.trace("TradeWebContextListener contextInitialized -- initializing TradeDirect");
         
         // Load settings from properties file (if it exists)
@@ -63,12 +67,28 @@ public class TradeWebContextListener implements ServletContextListener {
         }
         
         TradeDirect.init();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeWebContextListener.java::com.ibm.websphere.samples.daytrader.web.TradeWebContextListener::contextInitialized(ServletContextEvent)|");
+}
+}
 
     @Override
     public void contextDestroyed(ServletContextEvent event) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeWebContextListener.java::com.ibm.websphere.samples.daytrader.web.TradeWebContextListener::contextDestroyed(ServletContextEvent)|");
+
         Log.trace("TradeWebContextListener  contextDestroy calling TradeDirect:destroy()");
         // TradeDirect.destroy();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeWebContextListener.java::com.ibm.websphere.samples.daytrader.web.TradeWebContextListener::contextDestroyed(ServletContextEvent)|");
+}
+}
 
 }

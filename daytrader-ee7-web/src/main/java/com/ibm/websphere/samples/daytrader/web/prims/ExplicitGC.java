@@ -51,8 +51,18 @@ public class ExplicitGC extends HttpServlet {
      */
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::doPost(HttpServletRequest, HttpServletResponse)|");
+
         doGet(req, res);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * this is the main method of the servlet that will service all get
@@ -65,6 +75,10 @@ public class ExplicitGC extends HttpServlet {
      **/
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::doGet(HttpServletRequest, HttpServletResponse)|");
+
         try {
             res.setContentType("text/html");
 
@@ -130,7 +144,13 @@ public class ExplicitGC extends HttpServlet {
             res.sendError(500, e.toString());
 
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * returns a string of information about the servlet
@@ -139,8 +159,18 @@ public class ExplicitGC extends HttpServlet {
      **/
     @Override
     public String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::getServletInfo()|");
+
         return "Generate Explicit GC to VM";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::getServletInfo()|");
+}
+}
 
     /**
      * called when the class is loaded to initialize the servlet
@@ -150,9 +180,19 @@ public class ExplicitGC extends HttpServlet {
      **/
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::init(ServletConfig)|");
+
         super.init(config);
         initTime = new java.util.Date().toString();
         hitCount = 0;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ExplicitGC.java::com.ibm.websphere.samples.daytrader.web.prims.ExplicitGC::init(ServletConfig)|");
+}
+}
 }

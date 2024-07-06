@@ -38,11 +38,25 @@ public class PingUpgradeServlet extends HttpServlet {
 
     @Override
     protected void doGet(final HttpServletRequest req, final HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet::doGet(HttpServletRequest, HttpServletResponse)|");
+
         doPost(req,res);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
     
     @Override
     protected void doPost(final HttpServletRequest req, final HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet::doPost(HttpServletRequest, HttpServletResponse)|");
+
       
         if (Log.doTrace()) {
             Log.trace("PingUpgradeServlet:doPost");
@@ -68,12 +82,22 @@ public class PingUpgradeServlet extends HttpServlet {
             
             res.getWriter().println("No upgrade: " + req.getHeader("Upgrade"));
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     public static class Handler implements HttpUpgradeHandler {
     
         @Override
         public void init(final WebConnection wc) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Handler::init(WebConnection)|");
+
             Listener listener = null;
             try {
                 listener = new Listener(wc);
@@ -96,14 +120,30 @@ public class PingUpgradeServlet extends HttpServlet {
             } catch (IOException e) {
                 throw new IllegalArgumentException(e);
             }
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Handler::init(WebConnection)|");
+}
+}
 
         @Override
         public void destroy() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Handler::destroy()|");
+
             if (Log.doTrace()) {
                 Log.trace("PingUpgradeServlet$Handler.destroy() -- Destroying Handler");
             }
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Handler::destroy()|");
+}
+}
     }
 
     private static class Listener implements ReadListener {
@@ -112,13 +152,27 @@ public class PingUpgradeServlet extends HttpServlet {
         private ServletOutputStream output = null;
         
         private Listener(final WebConnection connection) throws IOException  {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::Listener(WebConnection)|");
+
             this.connection = connection;
             this.input = connection.getInputStream();
             this.output = connection.getOutputStream();
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::Listener(WebConnection)|");
+}
+}
 
         @Override
         public void onDataAvailable() throws IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::onDataAvailable()|");
+
             
             if (Log.doTrace()) {
                 Log.trace("PingUpgradeServlet$Listener.onDataAvailable() called");
@@ -139,9 +193,19 @@ public class PingUpgradeServlet extends HttpServlet {
             }
             
             closeConnection();
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::onDataAvailable()|");
+}
+}
 
         private void closeConnection() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::closeConnection()|");
+
             try {
                 connection.close();
             } catch (Exception e) {
@@ -149,17 +213,43 @@ public class PingUpgradeServlet extends HttpServlet {
                     Log.error(e.toString());
                 }
             }
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::closeConnection()|");
+}
+}
         
         
         @Override
         public void onAllDataRead() throws IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::onAllDataRead()|");
+
             closeConnection();
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::onAllDataRead()|");
+}
+}
 
         @Override
         public void onError(final Throwable t) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::onError(Throwable)|");
+
             closeConnection();
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingUpgradeServlet.java::com.ibm.websphere.samples.daytrader.web.prims.PingUpgradeServlet.Listener::onError(Throwable)|");
+}
+}
     }
 }

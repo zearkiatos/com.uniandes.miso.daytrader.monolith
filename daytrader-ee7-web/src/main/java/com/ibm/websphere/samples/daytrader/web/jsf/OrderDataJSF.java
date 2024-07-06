@@ -40,9 +40,23 @@ public class OrderDataJSF {
     private OrderData orderData;
 
     public OrderDataJSF() {
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::OrderDataJSF()|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::OrderDataJSF()|");
+}
+}
 
     public void getAllOrder() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getAllOrder()|");
+
         try {
             HttpSession session = (HttpSession) facesExternalContext.getSession(true);
             String userID = (String) session.getAttribute("uidBean");
@@ -67,31 +81,87 @@ public class OrderDataJSF {
             e.printStackTrace();
         }
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getAllOrder()|");
+}
+}
 
     @PostConstruct
     public void getOrder() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getOrder()|");
+
         HttpSession session = (HttpSession) facesExternalContext.getSession(true);
         OrderData order = (OrderData) session.getAttribute("orderData");
 
         if (order != null) {
             setOrderData(order);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getOrder()|");
+}
+}
 
     public void setAllOrders(OrderData[] allOrders) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::setAllOrders(OrderData[])|");
+
         this.allOrders = allOrders;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::setAllOrders(OrderData[])|");
+}
+}
 
     public OrderData[] getAllOrders() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getAllOrders()|");
+
         return allOrders;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getAllOrders()|");
+}
+}
 
     public void setOrderData(OrderData orderData) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::setOrderData(OrderData)|");
+
         this.orderData = orderData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::setOrderData(OrderData)|");
+}
+}
 
     public OrderData getOrderData() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getOrderData()|");
+
         return orderData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/OrderDataJSF.java::com.ibm.websphere.samples.daytrader.web.jsf.OrderDataJSF::getOrderData()|");
+}
+}
 }

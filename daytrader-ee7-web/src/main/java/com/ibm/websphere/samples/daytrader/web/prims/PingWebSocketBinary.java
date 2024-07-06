@@ -37,21 +37,55 @@ public class PingWebSocketBinary {
    
     @OnOpen
     public void onOpen(final Session session, EndpointConfig ec) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::onOpen(Session, EndpointConfig)|");
+
         currentSession = session;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::onOpen(Session, EndpointConfig)|");
+}
+}
 
     @OnMessage
-    public void ping(ByteBuffer data) {       
+    public void ping(ByteBuffer data) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::ping(ByteBuffer)|");
+       
         currentSession.getAsyncRemote().sendBinary(data);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::ping(ByteBuffer)|");
+}
+}
 
     @OnError
     public void onError(Throwable t) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::onError(Throwable)|");
+
         t.printStackTrace();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::onError(Throwable)|");
+}
+}
 
     @OnClose
     public void onClose(Session session, CloseReason reason) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::onClose(Session, CloseReason)|");
+
 
         try {
             if (session.isOpen()) {
@@ -60,6 +94,12 @@ public class PingWebSocketBinary {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketBinary.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketBinary::onClose(Session, CloseReason)|");
+}
+}
 
 }

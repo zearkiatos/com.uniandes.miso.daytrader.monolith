@@ -52,12 +52,22 @@ public class PingServletLargeContentLength extends HttpServlet {
      */
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::doPost(HttpServletRequest, HttpServletResponse)|");
+
         System.out.println("Length: " + req.getContentLengthLong());
         
         
         
         
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * this is the main method of the servlet that will service all get
@@ -70,7 +80,17 @@ public class PingServletLargeContentLength extends HttpServlet {
      **/
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-       doPost(req,res);    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::doGet(HttpServletRequest, HttpServletResponse)|");
+
+       doPost(req,res);    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * returns a string of information about the servlet
@@ -79,8 +99,18 @@ public class PingServletLargeContentLength extends HttpServlet {
      **/
     @Override
     public String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::getServletInfo()|");
+
         return "Basic dynamic HTML generation through a servlet, with " + "contentLength set by contentLength parameter.";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::getServletInfo()|");
+}
+}
 
     /**
      * called when the class is loaded to initialize the servlet
@@ -90,6 +120,16 @@ public class PingServletLargeContentLength extends HttpServlet {
      **/
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::init(ServletConfig)|");
+
         super.init(config);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletLargeContentLength.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletLargeContentLength::init(ServletConfig)|");
+}
+}
 }

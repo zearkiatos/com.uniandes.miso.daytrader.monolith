@@ -42,10 +42,24 @@ public class ActionMessage {
     
     String decodedAction = null;
     
-    public ActionMessage() {  
-    }
+    public ActionMessage() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionMessage.java::com.ibm.websphere.samples.daytrader.web.websocket.ActionMessage::ActionMessage()|");
+  
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionMessage.java::com.ibm.websphere.samples.daytrader.web.websocket.ActionMessage::ActionMessage()|");
+}
+}
     
     public void doDecoding(String jsonText) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionMessage.java::com.ibm.websphere.samples.daytrader.web.websocket.ActionMessage::doDecoding(String)|");
+
               
         String keyName = null;
         try 
@@ -79,11 +93,27 @@ public class ActionMessage {
             }
         }
         
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionMessage.java::com.ibm.websphere.samples.daytrader.web.websocket.ActionMessage::doDecoding(String)|");
+}
+}
     
     public String getDecodedAction() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionMessage.java::com.ibm.websphere.samples.daytrader.web.websocket.ActionMessage::getDecodedAction()|");
+
         return decodedAction;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/ActionMessage.java::com.ibm.websphere.samples.daytrader.web.websocket.ActionMessage::getDecodedAction()|");
+}
+}
     
 }
 

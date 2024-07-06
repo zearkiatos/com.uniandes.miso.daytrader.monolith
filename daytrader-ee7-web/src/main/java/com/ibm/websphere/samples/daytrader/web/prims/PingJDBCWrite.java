@@ -58,6 +58,10 @@ public class PingJDBCWrite extends HttpServlet {
      **/
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::doGet(HttpServletRequest, HttpServletResponse)|");
+
 
         String symbol = null;
         BigDecimal newPrice;
@@ -95,7 +99,13 @@ public class PingJDBCWrite extends HttpServlet {
             Log.error(e, "PingJDBCWrite -- error updating quote for symbol", symbol);
             res.sendError(500, "PingJDBCWrite Exception caught: " + e.toString());
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * returns a string of information about the servlet
@@ -104,8 +114,18 @@ public class PingJDBCWrite extends HttpServlet {
      **/
     @Override
     public String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::getServletInfo()|");
+
         return "Basic JDBC Write using a prepared statment makes use of TradeJDBC code.";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::getServletInfo()|");
+}
+}
 
     /**
      * called when the class is loaded to initialize the servlet
@@ -115,11 +135,21 @@ public class PingJDBCWrite extends HttpServlet {
      **/
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::init(ServletConfig)|");
+
         super.init(config);
         initTime = new java.util.Date().toString();
         hitCount = 0;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::init(ServletConfig)|");
+}
+}
 
     /**
      * forwards post requests to the doGet method Creation date: (11/6/2000
@@ -132,6 +162,16 @@ public class PingJDBCWrite extends HttpServlet {
      */
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::doPost(HttpServletRequest, HttpServletResponse)|");
+
         doGet(req, res);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingJDBCWrite.java::com.ibm.websphere.samples.daytrader.web.prims.PingJDBCWrite::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 }

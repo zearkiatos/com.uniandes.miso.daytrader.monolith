@@ -34,25 +34,65 @@ public class PingWebSocketTextAsync {
    
     @OnOpen
     public void onOpen(final Session session, EndpointConfig ec) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::onOpen(Session, EndpointConfig)|");
+
         currentSession = session;
         hitCount = 0;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::onOpen(Session, EndpointConfig)|");
+}
+}
 
     @OnMessage
     public void ping(String text) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::ping(String)|");
+
 
         hitCount++;
         currentSession.getAsyncRemote().sendText(hitCount.toString());
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::ping(String)|");
+}
+}
 
     @OnError
     public void onError(Throwable t) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::onError(Throwable)|");
+
         t.printStackTrace();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::onError(Throwable)|");
+}
+}
 
     @OnClose
     public void onClose(Session session, CloseReason reason) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::onClose(Session, CloseReason)|");
+
      
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingWebSocketTextAsync.java::com.ibm.websphere.samples.daytrader.web.prims.PingWebSocketTextAsync::onClose(Session, CloseReason)|");
+}
+}
 
 }

@@ -53,8 +53,18 @@ public class PingServlet2ServletRcv extends HttpServlet {
      */
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2ServletRcv.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet2ServletRcv::doPost(HttpServletRequest, HttpServletResponse)|");
+
         doGet(req, res);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2ServletRcv.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet2ServletRcv::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * this is the main method of the servlet that will service all get
@@ -67,6 +77,10 @@ public class PingServlet2ServletRcv extends HttpServlet {
      **/
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2ServletRcv.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet2ServletRcv::doGet(HttpServletRequest, HttpServletResponse)|");
+
         PingBean ab;
         try {
             ab = (PingBean) req.getAttribute("ab");
@@ -80,7 +94,13 @@ public class PingServlet2ServletRcv extends HttpServlet {
             res.sendError(500, "PingServlet2ServletRcv.doGet(...): general exception" + ex.toString());
         }
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2ServletRcv.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet2ServletRcv::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * called when the class is loaded to initialize the servlet
@@ -90,8 +110,18 @@ public class PingServlet2ServletRcv extends HttpServlet {
      **/
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2ServletRcv.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet2ServletRcv::init(ServletConfig)|");
+
         super.init(config);
         initTime = new java.util.Date().toString();
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2ServletRcv.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet2ServletRcv::init(ServletConfig)|");
+}
+}
 }

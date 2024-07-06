@@ -46,8 +46,18 @@ public class TradeConfigServlet extends HttpServlet {
      */
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::init(ServletConfig)|");
+
         super.init(config);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::init(ServletConfig)|");
+}
+}
 
     /**
      * Create the TradeConfig bean and pass it the config.jsp page
@@ -55,15 +65,29 @@ public class TradeConfigServlet extends HttpServlet {
      * Creation date: (2/8/2000 3:43:59 PM)
      */
     void doConfigDisplay(HttpServletRequest req, HttpServletResponse resp, String results) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::doConfigDisplay(HttpServletRequest, HttpServletResponse, String)|");
+
 
         TradeConfig currentConfig = new TradeConfig();
 
         req.setAttribute("tradeConfig", currentConfig);
         req.setAttribute("status", results);
         getServletConfig().getServletContext().getRequestDispatcher(TradeConfig.getPage(TradeConfig.CONFIG_PAGE)).include(req, resp);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::doConfigDisplay(HttpServletRequest, HttpServletResponse, String)|");
+}
+}
 
     void doResetTrade(HttpServletRequest req, HttpServletResponse resp, String results) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::doResetTrade(HttpServletRequest, HttpServletResponse, String)|");
+
         RunStatsDataBean runStatsData = new RunStatsDataBean();
         TradeConfig currentConfig = new TradeConfig();
         try {
@@ -81,13 +105,23 @@ public class TradeConfigServlet extends HttpServlet {
         }
         getServletConfig().getServletContext().getRequestDispatcher(TradeConfig.getPage(TradeConfig.STATS_PAGE)).include(req, resp);
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::doResetTrade(HttpServletRequest, HttpServletResponse, String)|");
+}
+}
 
     /**
      * Update Trade runtime configuration paramaters
      * Creation date: (2/8/2000 3:44:24 PM)
      */
     void doConfigUpdate(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::doConfigUpdate(HttpServletRequest, HttpServletResponse)|");
+
         String currentConfigStr = "\n\n########## Trade configuration update. Current config:\n\n";
                         
         String runTimeModeStr = req.getParameter("RunTimeMode");
@@ -267,10 +301,20 @@ public class TradeConfigServlet extends HttpServlet {
         currentConfigStr += "\t\tAction Trace Enabled:\t\t" + TradeConfig.getActionTrace() + "\n";
 
         System.out.println(currentConfigStr);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::doConfigUpdate(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     @Override
     public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::service(HttpServletRequest, HttpServletResponse)|");
+
 
         String action = null;
         String result = "";
@@ -342,5 +386,11 @@ public class TradeConfigServlet extends HttpServlet {
             resp.sendError(500, "TradeConfigServlet.service(...)" + "Exception trying to perform action=" + action + "\nException details: " + e.toString());
 
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeConfigServlet.java::com.ibm.websphere.samples.daytrader.web.TradeConfigServlet::service(HttpServletRequest, HttpServletResponse)|");
+}
+}
 }

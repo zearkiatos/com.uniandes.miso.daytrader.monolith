@@ -30,18 +30,42 @@ public class FinancialUtils {
     public static final BigDecimal HUNDRED = (new BigDecimal(100.00)).setScale(SCALE);
 
     public static BigDecimal computeGain(BigDecimal currentBalance, BigDecimal openBalance) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::computeGain(BigDecimal, BigDecimal)|");
+
         return currentBalance.subtract(openBalance).setScale(SCALE);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::computeGain(BigDecimal, BigDecimal)|");
+}
+}
 
     public static BigDecimal computeGainPercent(BigDecimal currentBalance, BigDecimal openBalance) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::computeGainPercent(BigDecimal, BigDecimal)|");
+
         if (openBalance.doubleValue() == 0.0) {
             return ZERO;
         }
         BigDecimal gainPercent = currentBalance.divide(openBalance, ROUND).subtract(ONE).multiply(HUNDRED);
         return gainPercent;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::computeGainPercent(BigDecimal, BigDecimal)|");
+}
+}
 
     public static BigDecimal computeHoldingsTotal(Collection<?> holdingDataBeans) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::computeHoldingsTotal(Collection)|");
+
         BigDecimal holdingsTotal = new BigDecimal(0.0).setScale(SCALE);
         if (holdingDataBeans == null) {
             return holdingsTotal;
@@ -53,9 +77,19 @@ public class FinancialUtils {
             holdingsTotal = holdingsTotal.add(total);
         }
         return holdingsTotal.setScale(SCALE);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::computeHoldingsTotal(Collection)|");
+}
+}
 
     public static String printGainHTML(BigDecimal gain) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printGainHTML(BigDecimal)|");
+
         String htmlString, arrow;
         if (gain.doubleValue() < 0.0) {
             htmlString = "<FONT color=\"#ff0000\">";
@@ -67,9 +101,19 @@ public class FinancialUtils {
 
         htmlString += gain.setScale(SCALE, ROUND) + "</FONT><IMG src=\"images/" + arrow + "\" width=\"10\" height=\"10\" border=\"0\"></IMG>";
         return htmlString;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printGainHTML(BigDecimal)|");
+}
+}
 
     public static String printChangeHTML(double change) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printChangeHTML(double)|");
+
         String htmlString, arrow;
         if (change < 0.0) {
             htmlString = "<FONT color=\"#ff0000\">";
@@ -81,9 +125,19 @@ public class FinancialUtils {
 
         htmlString += change + "</FONT><IMG src=\"images/" + arrow + "\" width=\"10\" height=\"10\" border=\"0\"></IMG>";
         return htmlString;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printChangeHTML(double)|");
+}
+}
 
     public static String printGainPercentHTML(BigDecimal gain) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printGainPercentHTML(BigDecimal)|");
+
         String htmlString, arrow;
         if (gain.doubleValue() < 0.0) {
             htmlString = "(<B><FONT color=\"#ff0000\">";
@@ -96,10 +150,26 @@ public class FinancialUtils {
         htmlString += gain.setScale(SCALE, ROUND);
         htmlString += "%</FONT></B>)<IMG src=\"images/" + arrow + "\" width=\"10\" height=\"10\" border=\"0\"></IMG>";
         return htmlString;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printGainPercentHTML(BigDecimal)|");
+}
+}
 
     public static String printQuoteLink(String symbol) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printQuoteLink(String)|");
+
         return "<A href=\"app?action=quotes&symbols=" + symbol + "\">" + symbol + "</A>";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/FinancialUtils.java::com.ibm.websphere.samples.daytrader.util.FinancialUtils::printQuoteLink(String)|");
+}
+}
 
 }
