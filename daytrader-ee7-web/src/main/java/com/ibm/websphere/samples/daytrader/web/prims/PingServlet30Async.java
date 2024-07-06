@@ -54,6 +54,10 @@ public class PingServlet30Async extends HttpServlet {
      */
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::doPost(HttpServletRequest, HttpServletResponse)|");
+
         res.setContentType("text/html");
                         
         AsyncContext ac = req.startAsync();
@@ -75,7 +79,13 @@ public class PingServlet30Async extends HttpServlet {
                 + "</font><br/><br/><b>Hit Count: " + ++hitCount + "</b><br/>Data Received: "+ sb.toString() + "</body></html>");
         
         ac.complete();
-    }       
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}       
 
 
     /**
@@ -89,9 +99,19 @@ public class PingServlet30Async extends HttpServlet {
      **/
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::doGet(HttpServletRequest, HttpServletResponse)|");
+
         doPost(req,res);
           
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
     /**
      * returns a string of information about the servlet
      *
@@ -99,8 +119,18 @@ public class PingServlet30Async extends HttpServlet {
      **/
     @Override
     public String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::getServletInfo()|");
+
         return "Basic dynamic HTML generation through a servlet";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::getServletInfo()|");
+}
+}
 
     /**
      * called when the class is loaded to initialize the servlet
@@ -110,9 +140,19 @@ public class PingServlet30Async extends HttpServlet {
      **/
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::init(ServletConfig)|");
+
         super.init(config);
         initTime = new java.util.Date().toString();
         hitCount = 0;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet30Async.java::com.ibm.websphere.samples.daytrader.web.prims.PingServlet30Async::init(ServletConfig)|");
+}
+}
 }

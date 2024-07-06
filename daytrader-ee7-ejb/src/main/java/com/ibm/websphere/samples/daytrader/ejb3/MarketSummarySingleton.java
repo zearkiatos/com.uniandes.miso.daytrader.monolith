@@ -47,12 +47,26 @@ public class MarketSummarySingleton {
     
     @PostConstruct 
     private void setup () {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::setup()|");
+
         updateMarketSummary();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::setup()|");
+}
+}
     
     /* Update Market Summary every 20 seconds */
     @Schedule(second = "*/20",minute = "*", hour = "*", persistent = false)
-    private void updateMarketSummary() { 
+    private void updateMarketSummary() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::updateMarketSummary()|");
+ 
         
         if (Log.doTrace()) {
             Log.trace("MarketSummarySingleton:updateMarketSummary -- updating market summary");
@@ -111,16 +125,42 @@ public class MarketSummarySingleton {
         }
         
         setMarketSummaryDataBean(new MarketSummaryDataBean(TSIA, openTSIA, totalVolume, topGainers, topLosers));
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::updateMarketSummary()|");
+}
+}
 
     @Lock(LockType.READ)
-    public MarketSummaryDataBean getMarketSummaryDataBean() {       
+    public MarketSummaryDataBean getMarketSummaryDataBean() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::getMarketSummaryDataBean()|");
+       
         return marketSummaryDataBean;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::getMarketSummaryDataBean()|");
+}
+}
 
     @Lock(LockType.WRITE)
     public void setMarketSummaryDataBean(MarketSummaryDataBean marketSummaryDataBean) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::setMarketSummaryDataBean(MarketSummaryDataBean)|");
+
         this.marketSummaryDataBean = marketSummaryDataBean;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/MarketSummarySingleton.java::com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton::setMarketSummaryDataBean(MarketSummaryDataBean)|");
+}
+}
 
 }

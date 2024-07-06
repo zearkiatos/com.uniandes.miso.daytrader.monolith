@@ -34,8 +34,18 @@ public class PingEJBLocal implements PingEJBIFace {
      */
     @Override
     public String getMsg() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingEJBLocal.java::com.ibm.websphere.samples.daytrader.web.prims.PingEJBLocal::getMsg()|");
+
 
         return "PingEJBLocal: " + hitCount++;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingEJBLocal.java::com.ibm.websphere.samples.daytrader.web.prims.PingEJBLocal::getMsg()|");
+}
+}
 
 }

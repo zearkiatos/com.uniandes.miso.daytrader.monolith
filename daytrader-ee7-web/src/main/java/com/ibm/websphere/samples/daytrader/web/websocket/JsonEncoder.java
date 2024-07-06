@@ -25,21 +25,51 @@ public class JsonEncoder implements Encoder.Text<JsonMessage>{
 
     @Override
     public void destroy() {
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonEncoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonEncoder::destroy()|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonEncoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonEncoder::destroy()|");
+}
+}
 
     @Override
     public void init(EndpointConfig ec) {
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonEncoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonEncoder::init(EndpointConfig)|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonEncoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonEncoder::init(EndpointConfig)|");
+}
+}
 
     @Override
     public String encode(JsonMessage message) throws EncodeException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonEncoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonEncoder::encode(JsonMessage)|");
+
         
         JsonObject jsonObject = Json.createObjectBuilder()
                 .add("key", message.getKey())
                 .add("value", message.getValue()).build();
 
         return jsonObject.toString();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonEncoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonEncoder::encode(JsonMessage)|");
+}
+}
 
    
 

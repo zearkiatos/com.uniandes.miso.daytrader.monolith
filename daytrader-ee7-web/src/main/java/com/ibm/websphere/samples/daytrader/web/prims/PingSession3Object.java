@@ -47,6 +47,10 @@ public class PingSession3Object implements Serializable {
     // The Session blob must be filled with data to avoid compression of the
     // blob during serialization
     PingSession3Object() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession3Object.java::com.ibm.websphere.samples.daytrader.web.prims.PingSession3Object::PingSession3Object()|");
+
         int index;
         byte b = 0x8;
         for (index = 0; index < 16; index++) {
@@ -68,7 +72,13 @@ public class PingSession3Object implements Serializable {
         h = (float) 17.0;
         i = 19.0;
         j = 23.0;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession3Object.java::com.ibm.websphere.samples.daytrader.web.prims.PingSession3Object::PingSession3Object()|");
+}
+}
     /**
      * Main method to test the serialization of the Session Data blob object
      * Creation date: (4/3/2000 3:07:34 PM)

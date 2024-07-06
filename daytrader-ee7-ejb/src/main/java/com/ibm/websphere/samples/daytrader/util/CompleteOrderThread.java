@@ -30,12 +30,26 @@ public class CompleteOrderThread implements Runnable {
         
         
         public CompleteOrderThread (Integer id, boolean twoPhase) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/CompleteOrderThread.java::com.ibm.websphere.samples.daytrader.util.CompleteOrderThread::CompleteOrderThread(Integer, boolean)|");
+
             orderID = id;
             this.twoPhase = twoPhase;
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/CompleteOrderThread.java::com.ibm.websphere.samples.daytrader.util.CompleteOrderThread::CompleteOrderThread(Integer, boolean)|");
+}
+}
         
         @Override
         public void run() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/CompleteOrderThread.java::com.ibm.websphere.samples.daytrader.util.CompleteOrderThread::run()|");
+
             TradeServices trade;
             UserTransaction ut = null;
             
@@ -67,5 +81,11 @@ public class CompleteOrderThread implements Runnable {
                 } 
                 throw new EJBException(e);
             } 
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/CompleteOrderThread.java::com.ibm.websphere.samples.daytrader.util.CompleteOrderThread::run()|");
+}
+}
 }

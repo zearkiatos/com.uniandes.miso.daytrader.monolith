@@ -41,12 +41,26 @@ public class TradeBuildDB {
      */
     public TradeBuildDB() throws Exception {
         this(new java.io.PrintWriter(System.out), null);
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::TradeBuildDB()|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::TradeBuildDB()|");
+}
+}
 
     /**
      * Re-create the DayTrader db tables and populate them OR just populate a DayTrader DB, logging to the provided output stream
      */
     public TradeBuildDB(java.io.PrintWriter out, InputStream ddlFile) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::TradeBuildDB(java.io.PrintWriter, InputStream)|");
+
         String symbol, companyName;
         int errorCount = 0; // Give up gracefully after 10 errors
         
@@ -172,9 +186,19 @@ public class TradeBuildDB {
             }
         } // end-for
         out.println("</BODY>");
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::TradeBuildDB(java.io.PrintWriter, InputStream)|");
+}
+}
 
     public Object[] parseDDLToBuffer(InputStream ddlFile) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::parseDDLToBuffer(InputStream)|");
+
         BufferedReader br = null;
         ArrayList<String> sqlBuffer = new ArrayList<String>(30); //initial capacity 30 assuming we have 30 ddl-sql statements to read
 
@@ -210,10 +234,26 @@ public class TradeBuildDB {
             }
         }
         return sqlBuffer.toArray();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::parseDDLToBuffer(InputStream)|");
+}
+}
 
     public static void main(String[] args) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::main(String[])|");
+
         new TradeBuildDB();
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeBuildDB.java::com.ibm.websphere.samples.daytrader.web.TradeBuildDB::main(String[])|");
+}
+}
 }

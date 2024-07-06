@@ -53,16 +53,30 @@ public class MarketSummaryWebSocket {
 
     @OnOpen
     public void onOpen(final Session session, EndpointConfig ec) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onOpen(Session, EndpointConfig)|");
+
         if (Log.doTrace()) {
             Log.trace("MarketSummaryWebSocket:onOpen -- session -->" + session + "<--");
         }
 
         sessions.add(session);
         latch.countDown();
-    } 
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onOpen(Session, EndpointConfig)|");
+}
+} 
     
     @OnMessage
     public void sendMarketSummary(ActionMessage message, Session currentSession) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::sendMarketSummary(ActionMessage, Session)|");
+
 
         String action = message.getDecodedAction();
         
@@ -101,18 +115,38 @@ public class MarketSummaryWebSocket {
                 e.printStackTrace();
             }
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::sendMarketSummary(ActionMessage, Session)|");
+}
+}
 
     @OnError
     public void onError(Throwable t, Session currentSession) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onError(Throwable, Session)|");
+
         if (Log.doTrace()) {
             Log.trace("MarketSummaryWebSocket:onError -- session -->" + currentSession + "<--");
         }
         t.printStackTrace();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onError(Throwable, Session)|");
+}
+}
 
     @OnClose
     public void onClose(Session session, CloseReason reason) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onClose(Session, CloseReason)|");
+
 
         if (Log.doTrace()) {
             Log.trace("MarketSummaryWebSocket:onClose -- session -->" + session + "<--");
@@ -120,9 +154,19 @@ public class MarketSummaryWebSocket {
 
         sessions.remove(session);
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onClose(Session, CloseReason)|");
+}
+}
     
     public static void onJMSMessage(@Observes @WebSocketJMSMessage Message message) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onJMSMessage(Message)|");
+
     	
     	if (Log.doTrace()) {
             Log.trace("MarketSummaryWebSocket:onJMSMessage");
@@ -139,9 +183,19 @@ public class MarketSummaryWebSocket {
                 }
             }
         }
-    }    
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::onJMSMessage(Message)|");
+}
+}    
     
     private JsonObject mergeJsonObjects(JsonObject obj1, JsonObject obj2) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::mergeJsonObjects(JsonObject, JsonObject)|");
+
         
         JsonObjectBuilder jObjectBuilder = Json.createObjectBuilder();
         
@@ -168,5 +222,11 @@ public class MarketSummaryWebSocket {
         }
         
         return jObjectBuilder.build();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/MarketSummaryWebSocket.java::com.ibm.websphere.samples.daytrader.web.websocket.MarketSummaryWebSocket::mergeJsonObjects(JsonObject, JsonObject)|");
+}
+}
 }

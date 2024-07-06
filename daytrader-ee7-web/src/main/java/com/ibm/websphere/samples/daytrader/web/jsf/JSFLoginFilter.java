@@ -34,7 +34,17 @@ public class JSFLoginFilter implements Filter {
 
     public JSFLoginFilter() {
         super();
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::JSFLoginFilter()|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::JSFLoginFilter()|");
+}
+}
 
     /**
      * @see Filter#init(FilterConfig)
@@ -43,14 +53,28 @@ public class JSFLoginFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::init(FilterConfig)|");
+
         this.filterConfig = filterConfig;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::init(FilterConfig)|");
+}
+}
 
     /**
      * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
      */
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::doFilter(ServletRequest, ServletResponse, FilterChain)|");
+
         if (filterConfig == null) {
             return;
         }
@@ -75,14 +99,30 @@ public class JSFLoginFilter implements Filter {
         }
 
         chain.doFilter(req, resp/* wrapper */);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::doFilter(ServletRequest, ServletResponse, FilterChain)|");
+}
+}
 
     /**
      * @see Filter#destroy()
      */
     @Override
     public void destroy() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::destroy()|");
+
         this.filterConfig = null;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/JSFLoginFilter.java::com.ibm.websphere.samples.daytrader.web.jsf.JSFLoginFilter::destroy()|");
+}
+}
 
 }

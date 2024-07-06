@@ -199,6 +199,10 @@ public class TradeConfig {
      */
 
     private static String getHostname() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getHostname()|");
+
         try {
             if (hostName == null) {
                 hostName = java.net.InetAddress.getLocalHost().getHostName();
@@ -213,7 +217,13 @@ public class TradeConfig {
             hostName = "localhost";
         }
         return hostName;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getHostname()|");
+}
+}
 
     /**
      * Return a Trade UI Web page based on the current configuration This may
@@ -221,8 +231,18 @@ public class TradeConfig {
      */
 
     public static String getPage(int pageNumber) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPage(int)|");
+
         return webUI[webInterface][pageNumber];
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPage(int)|");
+}
+}
 
     /**
      * Return the list of run time mode names Creation date: (3/8/2000 5:58:34
@@ -231,8 +251,18 @@ public class TradeConfig {
      * @return java.lang.String[]
      */
     public static java.lang.String[] getRunTimeModeNames() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getRunTimeModeNames()|");
+
         return runTimeModeNames;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getRunTimeModeNames()|");
+}
+}
 
     private static int scenarioCount = 0;
 
@@ -242,6 +272,10 @@ public class TradeConfig {
      */
 
     public static char getScenarioAction(boolean newUser) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getScenarioAction(boolean)|");
+
         int r = rndInt(100); // 0 to 99 = 100
         int i = 0;
         int sum = scenarioMixes[0][i];
@@ -271,9 +305,19 @@ public class TradeConfig {
         }
 
         return actions[i];
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getScenarioAction(boolean)|");
+}
+}
 
     public static String getUserID() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getUserID()|");
+
         String userID;
         if (RND_USER) {
             userID = rndUserID();
@@ -281,28 +325,58 @@ public class TradeConfig {
             userID = nextUserID();
         }
         return userID;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getUserID()|");
+}
+}
 
     private static final BigDecimal orderFee = new BigDecimal("24.95");
     private static final BigDecimal cashFee = new BigDecimal("0.0");
 
     public static BigDecimal getOrderFee(String orderType) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getOrderFee(String)|");
+
         if ((orderType.compareToIgnoreCase("BUY") == 0) || (orderType.compareToIgnoreCase("SELL") == 0)) {
             return orderFee;
         }
 
         return cashFee;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getOrderFee(String)|");
+}
+}
 
     /**
      * Increment the sell deficit counter Creation date: (6/21/2000 11:33:45 AM)
      */
     public static synchronized void incrementSellDeficit() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::incrementSellDeficit()|");
+
         sellDeficit++;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::incrementSellDeficit()|");
+}
+}
 
     public static String nextUserID() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::nextUserID()|");
+
         String userID;
         synchronized (userID_count_semaphore) {
             userID = "uid:" + userID_count;
@@ -312,64 +386,194 @@ public class TradeConfig {
             }
         }
         return userID;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::nextUserID()|");
+}
+}
 
     public static double random() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::random()|");
+
         return randomNumberGenerator.nextDouble();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::random()|");
+}
+}
 
     public static String rndAddress() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndAddress()|");
+
         return rndInt(1000) + " Oak St.";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndAddress()|");
+}
+}
 
     public static String rndBalance() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndBalance()|");
+
         // Give all new users a cool mill in which to trade
         return "1000000";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndBalance()|");
+}
+}
 
     public static String rndCreditCard() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndCreditCard()|");
+
         return rndInt(100) + "-" + rndInt(1000) + "-" + rndInt(1000) + "-" + rndInt(1000);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndCreditCard()|");
+}
+}
 
     public static String rndEmail(String userID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndEmail(String)|");
+
         return userID + "@" + rndInt(100) + ".com";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndEmail(String)|");
+}
+}
 
     public static String rndFullName() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndFullName()|");
+
         return "first:" + rndInt(1000) + " last:" + rndInt(5000);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndFullName()|");
+}
+}
 
     public static int rndInt(int i) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndInt(int)|");
+
         return (new Float(random() * i)).intValue();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndInt(int)|");
+}
+}
 
     public static float rndFloat(int i) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndFloat(int)|");
+
         return (new Float(random() * i)).floatValue();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndFloat(int)|");
+}
+}
 
     public static BigDecimal rndBigDecimal(float f) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndBigDecimal(float)|");
+
         return (new BigDecimal(random() * f)).setScale(2, BigDecimal.ROUND_HALF_UP);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndBigDecimal(float)|");
+}
+}
 
     public static boolean rndBoolean() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndBoolean()|");
+
         return randomNumberGenerator.nextBoolean();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndBoolean()|");
+}
+}
 
     /**
      * Returns a new Trade user Creation date: (2/16/2000 8:50:35 PM)
      */
     public static synchronized String rndNewUserID() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndNewUserID()|");
+
 
         return newUserPrefix + getHostname() + System.currentTimeMillis() + count++;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndNewUserID()|");
+}
+}
 
     public static float rndPrice() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndPrice()|");
+
         return ((new Integer(rndInt(200))).floatValue()) + 1.0f;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndPrice()|");
+}
+}
 
     private static final BigDecimal ONE = new BigDecimal(1.0);
 	
     public static BigDecimal getRandomPriceChangeFactor() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getRandomPriceChangeFactor()|");
+
         // CJB (DAYTRADER-25) - Vary change factor between 1.1 and 0.9
         double percentGain = rndFloat(1) * 0.1;
         if (random() < .5) {
@@ -384,17 +588,47 @@ public class TradeConfig {
         }
 
         return percentGainBD;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getRandomPriceChangeFactor()|");
+}
+}
 
     public static float rndQuantity() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndQuantity()|");
+
         return ((new Integer(rndInt(200))).floatValue()) + 1.0f;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndQuantity()|");
+}
+}
 
     public static String rndSymbol() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndSymbol()|");
+
         return "s:" + rndInt(MAX_QUOTES - 1);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndSymbol()|");
+}
+}
 
     public static String rndSymbols() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndSymbols()|");
+
 
         String symbols = "";
         int num_symbols = rndInt(QUOTES_PER_PAGE);
@@ -406,18 +640,38 @@ public class TradeConfig {
             }
         }
         return symbols;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndSymbols()|");
+}
+}
 
     public static String rndUserID() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndUserID()|");
+
         String nextUser = getNextUserIDFromDeck();
         if (Log.doTrace()) {
             Log.trace("TradeConfig:rndUserID -- new trader = " + nextUser);
         }
 
         return nextUser;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::rndUserID()|");
+}
+}
 
     private static synchronized String getNextUserIDFromDeck() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getNextUserIDFromDeck()|");
+
         int numUsers = getMAX_USERS();
         if (deck == null) {
             deck = new ArrayList<Integer>(numUsers);
@@ -431,7 +685,13 @@ public class TradeConfig {
         }
         return "uid:" + deck.get(card++);
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getNextUserIDFromDeck()|");
+}
+}
 
     // Trade implements a card deck approach to selecting
     // users for trading with tradescenarioservlet
@@ -445,8 +705,18 @@ public class TradeConfig {
      *            java.lang.String[]
      */
     public static void setRunTimeModeNames(java.lang.String[] newRunTimeModeNames) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setRunTimeModeNames(java.lang.String[])|");
+
         runTimeModeNames = newRunTimeModeNames;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setRunTimeModeNames(java.lang.String[])|");
+}
+}
 
     /**
      * This is a convenience method for servlets to set Trade configuration
@@ -457,6 +727,10 @@ public class TradeConfig {
      *
      */
     public static void setConfigParam(String parm, String value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setConfigParam(String, String)|");
+
         Log.log("TradeConfig setting parameter: " + parm + "=" + value);
         // Compare the parm value to valid TradeConfig parameters that can be
         // set
@@ -571,7 +845,13 @@ public class TradeConfig {
                 // <<rjm
             } // On error, revert to saved
         }*/
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setConfigParam(String, String)|");
+}
+}
 
     /**
      * Gets the orderProcessingModeNames
@@ -579,8 +859,18 @@ public class TradeConfig {
      * @return Returns a String[]
      */
     public static String[] getOrderProcessingModeNames() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getOrderProcessingModeNames()|");
+
         return orderProcessingModeNames;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getOrderProcessingModeNames()|");
+}
+}
 
     /**
      * Gets the webInterfaceNames
@@ -588,8 +878,18 @@ public class TradeConfig {
      * @return Returns a String[]
      */
     public static String[] getWebInterfaceNames() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getWebInterfaceNames()|");
+
         return webInterfaceNames;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getWebInterfaceNames()|");
+}
+}
 
     /**
      * Gets the webInterfaceNames
@@ -606,8 +906,18 @@ public class TradeConfig {
      * @return Returns a int[][]
      */
     public static int[][] getScenarioMixes() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getScenarioMixes()|");
+
         return scenarioMixes;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getScenarioMixes()|");
+}
+}
 
     /**
      * Gets the trace
@@ -615,8 +925,18 @@ public class TradeConfig {
      * @return Returns a boolean
      */
     public static boolean getTrace() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getTrace()|");
+
         return trace;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getTrace()|");
+}
+}
 
     /**
      * Sets the trace
@@ -625,8 +945,18 @@ public class TradeConfig {
      *            The trace to set
      */
     public static void setTrace(boolean traceValue) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setTrace(boolean)|");
+
         trace = traceValue;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setTrace(boolean)|");
+}
+}
 
     /**
      * Gets the mAX_USERS.
@@ -634,8 +964,18 @@ public class TradeConfig {
      * @return Returns a int
      */
     public static int getMAX_USERS() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMAX_USERS()|");
+
         return MAX_USERS;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMAX_USERS()|");
+}
+}
 
     /**
      * Sets the mAX_USERS.
@@ -644,9 +984,19 @@ public class TradeConfig {
      *            The mAX_USERS to set
      */
     public static void setMAX_USERS(int mAX_USERS) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMAX_USERS(int)|");
+
         MAX_USERS = mAX_USERS;
         deck = null; // reset the card deck for selecting users
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMAX_USERS(int)|");
+}
+}
 
     /**
      * Gets the mAX_QUOTES.
@@ -654,8 +1004,18 @@ public class TradeConfig {
      * @return Returns a int
      */
     public static int getMAX_QUOTES() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMAX_QUOTES()|");
+
         return MAX_QUOTES;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMAX_QUOTES()|");
+}
+}
 
     /**
      * Sets the mAX_QUOTES.
@@ -664,8 +1024,18 @@ public class TradeConfig {
      *            The mAX_QUOTES to set
      */
     public static void setMAX_QUOTES(int mAX_QUOTES) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMAX_QUOTES(int)|");
+
         MAX_QUOTES = mAX_QUOTES;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMAX_QUOTES(int)|");
+}
+}
 
     /**
      * Gets the mAX_HOLDINGS.
@@ -673,8 +1043,18 @@ public class TradeConfig {
      * @return Returns a int
      */
     public static int getMAX_HOLDINGS() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMAX_HOLDINGS()|");
+
         return MAX_HOLDINGS;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMAX_HOLDINGS()|");
+}
+}
 
     /**
      * Sets the mAX_HOLDINGS.
@@ -683,8 +1063,18 @@ public class TradeConfig {
      *            The mAX_HOLDINGS to set
      */
     public static void setMAX_HOLDINGS(int mAX_HOLDINGS) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMAX_HOLDINGS(int)|");
+
         MAX_HOLDINGS = mAX_HOLDINGS;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMAX_HOLDINGS(int)|");
+}
+}
 
     /**
      * Gets the actionTrace.
@@ -692,8 +1082,18 @@ public class TradeConfig {
      * @return Returns a boolean
      */
     public static boolean getActionTrace() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getActionTrace()|");
+
         return actionTrace;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getActionTrace()|");
+}
+}
 
     /**
      * Sets the actionTrace.
@@ -702,8 +1102,18 @@ public class TradeConfig {
      *            The actionTrace to set
      */
     public static void setActionTrace(boolean actionTrace) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setActionTrace(boolean)|");
+
         TradeConfig.actionTrace = actionTrace;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setActionTrace(boolean)|");
+}
+}
 
     /**
      * Gets the scenarioCount.
@@ -711,8 +1121,18 @@ public class TradeConfig {
      * @return Returns a int
      */
     public static int getScenarioCount() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getScenarioCount()|");
+
         return scenarioCount;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getScenarioCount()|");
+}
+}
 
     /**
      * Sets the scenarioCount.
@@ -721,12 +1141,32 @@ public class TradeConfig {
      *            The scenarioCount to set
      */
     public static void setScenarioCount(int scenarioCount) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setScenarioCount(int)|");
+
         TradeConfig.scenarioCount = scenarioCount;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setScenarioCount(int)|");
+}
+}
 
     public static synchronized void incrementScenarioCount() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::incrementScenarioCount()|");
+
         scenarioCount++;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::incrementScenarioCount()|");
+}
+}
 
     /**
      * Gets the jdbc driver needs global transaction Some XA Drivers require a
@@ -736,8 +1176,18 @@ public class TradeConfig {
      * @return Returns a boolean
      */
     public static boolean getJDBCDriverNeedsGlobalTransation() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getJDBCDriverNeedsGlobalTransation()|");
+
         return JDBCDriverNeedsGlobalTransation;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getJDBCDriverNeedsGlobalTransation()|");
+}
+}
 
     /**
      * Sets the jdbc driver needs global transaction
@@ -746,8 +1196,18 @@ public class TradeConfig {
      *            the value
      */
     public static void setJDBCDriverNeedsGlobalTransation(boolean JDBCDriverNeedsGlobalTransationVal) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setJDBCDriverNeedsGlobalTransation(boolean)|");
+
         JDBCDriverNeedsGlobalTransation = JDBCDriverNeedsGlobalTransationVal;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setJDBCDriverNeedsGlobalTransation(boolean)|");
+}
+}
 
     /**
      * Gets the updateQuotePrices.
@@ -755,8 +1215,18 @@ public class TradeConfig {
      * @return Returns a boolean
      */
     public static boolean getUpdateQuotePrices() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getUpdateQuotePrices()|");
+
         return updateQuotePrices;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getUpdateQuotePrices()|");
+}
+}
 
     /**
      * Sets the updateQuotePrices.
@@ -765,72 +1235,242 @@ public class TradeConfig {
      *            The updateQuotePrices to set
      */
     public static void setUpdateQuotePrices(boolean updateQuotePrices) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setUpdateQuotePrices(boolean)|");
+
         TradeConfig.updateQuotePrices = updateQuotePrices;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setUpdateQuotePrices(boolean)|");
+}
+}
 
     public static int getPrimIterations() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPrimIterations()|");
+
         return primIterations;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPrimIterations()|");
+}
+}
 
     public static void setPrimIterations(int iter) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setPrimIterations(int)|");
+
         primIterations = iter;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setPrimIterations(int)|");
+}
+}
 
     public static boolean getLongRun() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getLongRun()|");
+
         return longRun;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getLongRun()|");
+}
+}
 
     public static void setLongRun(boolean longRun) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setLongRun(boolean)|");
+
         TradeConfig.longRun = longRun;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setLongRun(boolean)|");
+}
+}
 
     public static void setPublishQuotePriceChange(boolean publishQuotePriceChange) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setPublishQuotePriceChange(boolean)|");
+
         TradeConfig.publishQuotePriceChange = publishQuotePriceChange;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setPublishQuotePriceChange(boolean)|");
+}
+}
 
     public static boolean getPublishQuotePriceChange() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPublishQuotePriceChange()|");
+
         return publishQuotePriceChange;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPublishQuotePriceChange()|");
+}
+}
 
     public static void setMarketSummaryInterval(int seconds) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMarketSummaryInterval(int)|");
+
         TradeConfig.marketSummaryInterval = seconds;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setMarketSummaryInterval(int)|");
+}
+}
 
     public static int getMarketSummaryInterval() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMarketSummaryInterval()|");
+
         return TradeConfig.marketSummaryInterval;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getMarketSummaryInterval()|");
+}
+}
 
     public static void setRunTimeMode(int value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setRunTimeMode(int)|");
+
         runTimeMode = value;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setRunTimeMode(int)|");
+}
+}
 
     public static int getRunTimeMode() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getRunTimeMode()|");
+
         return runTimeMode;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getRunTimeMode()|");
+}
+}
 
     public static void setOrderProcessingMode(int value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setOrderProcessingMode(int)|");
+
         orderProcessingMode = value;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setOrderProcessingMode(int)|");
+}
+}
 
     public static int getOrderProcessingMode() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getOrderProcessingMode()|");
+
         return orderProcessingMode;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getOrderProcessingMode()|");
+}
+}
 
     public static void setAccessMode(int value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setAccessMode(int)|");
+
         accessMode = value;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setAccessMode(int)|");
+}
+}
 
     public static int getAccessMode() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getAccessMode()|");
+
         return accessMode;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getAccessMode()|");
+}
+}
 
     public static void setWebInterface(int value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setWebInterface(int)|");
+
         webInterface = value;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setWebInterface(int)|");
+}
+}
 
     public static int getWebInterface() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getWebInterface()|");
+
         return webInterface;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getWebInterface()|");
+}
+}
 
     /*public static void setCachingType(int value) {
         cachingType = value;
@@ -841,12 +1481,32 @@ public class TradeConfig {
     }
 	*/
     public static void setDisplayOrderAlerts(boolean value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setDisplayOrderAlerts(boolean)|");
+
         displayOrderAlerts = value;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setDisplayOrderAlerts(boolean)|");
+}
+}
 
     public static boolean getDisplayOrderAlerts() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getDisplayOrderAlerts()|");
+
         return displayOrderAlerts;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getDisplayOrderAlerts()|");
+}
+}
     /*
     public static void setDistributedMapCacheSize(int value) {
         distributedMapCacheSize = value;
@@ -857,18 +1517,58 @@ public class TradeConfig {
     }*/
 
     public static void setPercentSentToWebsocket(int value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setPercentSentToWebsocket(int)|");
+
 		percentSentToWebsocket = value;
-	}
+	
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setPercentSentToWebsocket(int)|");
+}
+}
     
 	public static int getPercentSentToWebsocket() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPercentSentToWebsocket()|");
+
 		return percentSentToWebsocket;
-	}
+	
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::getPercentSentToWebsocket()|");
+}
+}
 	
 	public static void setUseRemoteEJBInterface(boolean value) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setUseRemoteEJBInterface(boolean)|");
+
 		useRemoteEJBInterface = value;
-	}
+	
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::setUseRemoteEJBInterface(boolean)|");
+}
+}
 
 	public static boolean useRemoteEJBInterface() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::useRemoteEJBInterface()|");
+
 		return useRemoteEJBInterface;
-	}	
+	
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/util/TradeConfig.java::com.ibm.websphere.samples.daytrader.util.TradeConfig::useRemoteEJBInterface()|");
+}
+}	
 }

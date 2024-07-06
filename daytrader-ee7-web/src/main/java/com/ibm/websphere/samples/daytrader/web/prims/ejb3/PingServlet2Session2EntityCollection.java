@@ -56,11 +56,25 @@ public class PingServlet2Session2EntityCollection extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::doPost(HttpServletRequest, HttpServletResponse)|");
+
         doGet(req, res);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::doPost(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::doGet(HttpServletRequest, HttpServletResponse)|");
+
 
         res.setContentType("text/html");
         java.io.PrintWriter out = res.getWriter();
@@ -103,17 +117,43 @@ public class PingServlet2Session2EntityCollection extends HttpServlet {
             Log.error(e, "PingServlet2Session2EntityCollection.doGet(...): General Exception caught");
             res.sendError(500, "General Exception caught, " + e.toString());
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     @Override
     public String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::getServletInfo()|");
+
         return "web primitive, tests Servlet to Session to Entity returning a collection of Entity EJBs";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::getServletInfo()|");
+}
+}
 
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::init(ServletConfig)|");
+
         super.init(config);
         hitCount = 0;
         initTime = new java.util.Date().toString();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/ejb3/PingServlet2Session2EntityCollection.java::com.ibm.websphere.samples.daytrader.web.prims.ejb3.PingServlet2Session2EntityCollection::init(ServletConfig)|");
+}
+}
 }

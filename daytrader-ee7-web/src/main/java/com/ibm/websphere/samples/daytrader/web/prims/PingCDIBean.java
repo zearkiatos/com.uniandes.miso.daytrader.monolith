@@ -33,10 +33,24 @@ public class PingCDIBean {
 
     
     public int hello() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIBean.java::com.ibm.websphere.samples.daytrader.web.prims.PingCDIBean::hello()|");
+
         return ++helloHitCount;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIBean.java::com.ibm.websphere.samples.daytrader.web.prims.PingCDIBean::hello()|");
+}
+}
 
     public int getBeanMangerViaJNDI() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIBean.java::com.ibm.websphere.samples.daytrader.web.prims.PingCDIBean::getBeanMangerViaJNDI()|");
+
         BeanManager beanManager = (BeanManager) new InitialContext().lookup("java:comp/BeanManager");
         Set<Bean<?>> beans = beanManager.getBeans(Object.class);
         if (beans.size() > 0) {
@@ -44,9 +58,19 @@ public class PingCDIBean {
         }
         return 0;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIBean.java::com.ibm.websphere.samples.daytrader.web.prims.PingCDIBean::getBeanMangerViaJNDI()|");
+}
+}
     
     public int getBeanMangerViaCDICurrent() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIBean.java::com.ibm.websphere.samples.daytrader.web.prims.PingCDIBean::getBeanMangerViaCDICurrent()|");
+
         BeanManager beanManager = CDI.current().getBeanManager();
         Set<Bean<?>> beans = beanManager.getBeans(Object.class);
         
@@ -55,5 +79,11 @@ public class PingCDIBean {
         }
         return 0;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingCDIBean.java::com.ibm.websphere.samples.daytrader.web.prims.PingCDIBean::getBeanMangerViaCDICurrent()|");
+}
+}
 }

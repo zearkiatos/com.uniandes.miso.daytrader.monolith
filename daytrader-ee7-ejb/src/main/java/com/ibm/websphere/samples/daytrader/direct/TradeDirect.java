@@ -81,24 +81,48 @@ public class TradeDirect implements TradeServices {
      * Zero arg constructor for TradeDirect
      */
     public TradeDirect() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::TradeDirect()|");
+
         if (initialized == false) {
             init();
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::TradeDirect()|");
+}
+}
 
     public TradeDirect(boolean inSession) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::TradeDirect(boolean)|");
+
         if (initialized == false) {
             init();
         }
 
         this.inSession = inSession;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::TradeDirect(boolean)|");
+}
+}
 
     /**
      * @see TradeServices#getMarketSummary()
      */
     @Override
     public MarketSummaryDataBean getMarketSummary() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getMarketSummary()|");
+
 
         MarketSummaryDataBean marketSummaryData = null;
         Connection conn = null;
@@ -188,13 +212,23 @@ public class TradeDirect implements TradeServices {
         }
         return marketSummaryData;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getMarketSummary()|");
+}
+}
 
     /**
      * @see TradeServices#buy(String, String, double)
      */
     @Override
     public OrderDataBean buy(String userID, String symbol, double quantity, int orderProcessingMode) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::buy(String, String, double, int)|");
+
 
         final Connection conn = getConn();
         OrderDataBean orderData = null;
@@ -272,13 +306,23 @@ public class TradeDirect implements TradeServices {
         }
 
         return orderData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::buy(String, String, double, int)|");
+}
+}
 
     /**
      * @see TradeServices#sell(String, Integer)
      */
     @Override
     public OrderDataBean sell(String userID, Integer holdingID, int orderProcessingMode) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::sell(String, Integer, int)|");
+
         Connection conn = null;
         OrderDataBean orderData = null;
         UserTransaction txn = null;
@@ -376,13 +420,23 @@ public class TradeDirect implements TradeServices {
         }
 
         return orderData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::sell(String, Integer, int)|");
+}
+}
 
     /**
      * @see TradeServices#queueOrder(Integer)
      */
     @Override
     public void queueOrder(Integer orderID, boolean twoPhase) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::queueOrder(Integer, boolean)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeDirect:queueOrder - inSession(" + this.inSession + ")", orderID);
         }
@@ -414,13 +468,23 @@ public class TradeDirect implements TradeServices {
                 throw e; // pass the exception
             }
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::queueOrder(Integer, boolean)|");
+}
+}
 
     /**
      * @see TradeServices#completeOrder(Integer)
      */
     @Override
     public OrderDataBean completeOrder(Integer orderID, boolean twoPhase) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::completeOrder(Integer, boolean)|");
+
         OrderDataBean orderData = null;
         Connection conn = null;
 
@@ -445,9 +509,19 @@ public class TradeDirect implements TradeServices {
 
         return orderData;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::completeOrder(Integer, boolean)|");
+}
+}
 
     private OrderDataBean completeOrder(Connection conn, Integer orderID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::completeOrder(Connection, Integer)|");
+
         //conn = getConn();
         OrderDataBean orderData = null;
         if (Log.doTrace()) {
@@ -548,13 +622,23 @@ public class TradeDirect implements TradeServices {
         }
 
         return orderData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::completeOrder(Connection, Integer)|");
+}
+}
 
     /**
      * @see TradeServices#cancelOrder(Integer, boolean)
      */
     @Override
     public void cancelOrder(Integer orderID, boolean twoPhase) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::cancelOrder(Integer, boolean)|");
+
 
         Connection conn = null;
         try {
@@ -572,18 +656,48 @@ public class TradeDirect implements TradeServices {
         } finally {
             releaseConn(conn);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::cancelOrder(Integer, boolean)|");
+}
+}
 
     private void cancelOrder(Connection conn, Integer orderID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::cancelOrder(Connection, Integer)|");
+
         updateOrderStatus(conn, orderID, "cancelled");
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::cancelOrder(Connection, Integer)|");
+}
+}
 
     @Override
     public void orderCompleted(String userID, Integer orderID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::orderCompleted(String, Integer)|");
+
         throw new UnsupportedOperationException("TradeDirect:orderCompleted method not supported");
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::orderCompleted(String, Integer)|");
+}
+}
 
     private HoldingDataBean createHolding(Connection conn, int accountID, String symbol, double quantity, BigDecimal purchasePrice) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::createHolding(Connection, int, String, double, BigDecimal)|");
+
 
         Timestamp purchaseDate = new Timestamp(System.currentTimeMillis());
         PreparedStatement stmt = getStatement(conn, createHoldingSQL);
@@ -600,9 +714,19 @@ public class TradeDirect implements TradeServices {
         stmt.close();
 
         return getHoldingData(conn, holdingID.intValue());
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::createHolding(Connection, int, String, double, BigDecimal)|");
+}
+}
 
     private void removeHolding(Connection conn, int holdingID, int orderID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::removeHolding(Connection, int, int)|");
+
         PreparedStatement stmt = getStatement(conn, removeHoldingSQL);
 
         stmt.setInt(1, holdingID);
@@ -617,10 +741,20 @@ public class TradeDirect implements TradeServices {
         stmt.executeUpdate();
         stmt.close();
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::removeHolding(Connection, int, int)|");
+}
+}
 
     private OrderDataBean createOrder(Connection conn, AccountDataBean accountData, QuoteDataBean quoteData, HoldingDataBean holdingData, String orderType,
             double quantity) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::createOrder(Connection, AccountDataBean, QuoteDataBean, HoldingDataBean, String, double)|");
+
 
         Timestamp currentDate = new Timestamp(System.currentTimeMillis());
 
@@ -646,13 +780,23 @@ public class TradeDirect implements TradeServices {
         stmt.close();
 
         return getOrderData(conn, orderID.intValue());
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::createOrder(Connection, AccountDataBean, QuoteDataBean, HoldingDataBean, String, double)|");
+}
+}
 
     /**
      * @see TradeServices#getOrders(String)
      */
     @Override
     public Collection<OrderDataBean> getOrders(String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getOrders(String)|");
+
         Collection<OrderDataBean> orderDataBeans = new ArrayList<OrderDataBean>();
         Connection conn = null;
         try {
@@ -685,13 +829,23 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return orderDataBeans;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getOrders(String)|");
+}
+}
 
     /**
      * @see TradeServices#getClosedOrders(String)
      */
     @Override
     public Collection<OrderDataBean> getClosedOrders(String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getClosedOrders(String)|");
+
         Collection<OrderDataBean> orderDataBeans = new ArrayList<OrderDataBean>();
         Connection conn = null;
         try {
@@ -722,13 +876,23 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return orderDataBeans;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getClosedOrders(String)|");
+}
+}
 
     /**
      * @see TradeServices#createQuote(String, String, BigDecimal)
      */
     @Override
     public QuoteDataBean createQuote(String symbol, String companyName, BigDecimal price) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::createQuote(String, String, BigDecimal)|");
+
 
         QuoteDataBean quoteData = null;
         Connection conn = null;
@@ -765,7 +929,13 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return quoteData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::createQuote(String, String, BigDecimal)|");
+}
+}
 
     /**
      * @see TradeServices#getQuote(String)
@@ -773,6 +943,10 @@ public class TradeDirect implements TradeServices {
 
     @Override
     public QuoteDataBean getQuote(String symbol) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuote(String)|");
+
         QuoteDataBean quoteData = null;
         Connection conn = null;
 
@@ -791,9 +965,19 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return quoteData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuote(String)|");
+}
+}
 
     private QuoteDataBean getQuote(Connection conn, String symbol) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuote(Connection, String)|");
+
         QuoteDataBean quoteData = null;
         PreparedStatement stmt = getStatement(conn, getQuoteSQL);
         stmt.setString(1, symbol); // symbol
@@ -809,9 +993,19 @@ public class TradeDirect implements TradeServices {
         stmt.close();
 
         return quoteData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuote(Connection, String)|");
+}
+}
 
     private QuoteDataBean getQuoteForUpdate(Connection conn, String symbol) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuoteForUpdate(Connection, String)|");
+
         QuoteDataBean quoteData = null;
         PreparedStatement stmt = getStatement(conn, getQuoteForUpdateSQL);
         stmt.setString(1, symbol); // symbol
@@ -827,13 +1021,23 @@ public class TradeDirect implements TradeServices {
         stmt.close();
 
         return quoteData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuoteForUpdate(Connection, String)|");
+}
+}
 
     /**
      * @see TradeServices#getAllQuotes(String)
      */
     @Override
     public Collection<QuoteDataBean> getAllQuotes() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAllQuotes()|");
+
         Collection<QuoteDataBean> quotes = new ArrayList<QuoteDataBean>();
         QuoteDataBean quoteData = null;
 
@@ -859,13 +1063,23 @@ public class TradeDirect implements TradeServices {
         }
 
         return quotes;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAllQuotes()|");
+}
+}
 
     /**
      * @see TradeServices#getHoldings(String)
      */
     @Override
     public Collection<HoldingDataBean> getHoldings(String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldings(String)|");
+
         Collection<HoldingDataBean> holdingDataBeans = new ArrayList<HoldingDataBean>();
         Connection conn = null;
         try {
@@ -894,13 +1108,23 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return holdingDataBeans;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldings(String)|");
+}
+}
 
     /**
      * @see TradeServices#getHolding(Integer)
      */
     @Override
     public HoldingDataBean getHolding(Integer holdingID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHolding(Integer)|");
+
         HoldingDataBean holdingData = null;
         Connection conn = null;
         try {
@@ -920,13 +1144,23 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return holdingData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHolding(Integer)|");
+}
+}
 
     /**
      * @see TradeServices#getAccountData(String)
      */
     @Override
     public AccountDataBean getAccountData(String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(String)|");
+
         try {
             AccountDataBean accountData = null;
             Connection conn = null;
@@ -949,16 +1183,32 @@ public class TradeDirect implements TradeServices {
         } catch (Exception e) {
             throw new Exception(e.getMessage(), e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(String)|");
+}
+}
 
     private AccountDataBean getAccountData(Connection conn, String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(Connection, String)|");
+
         PreparedStatement stmt = getStatement(conn, getAccountForUserSQL);
         stmt.setString(1, userID);
         ResultSet rs = stmt.executeQuery();
         AccountDataBean accountData = getAccountDataFromResultSet(rs);
         stmt.close();
         return accountData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(Connection, String)|");
+}
+}
 
     /*private AccountDataBean getAccountDataForUpdate(Connection conn,
             String userID) throws Exception {
@@ -975,6 +1225,10 @@ public class TradeDirect implements TradeServices {
      * @see TradeServices#getAccountData(String)
      */
     public AccountDataBean getAccountData(int accountID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(int)|");
+
         AccountDataBean accountData = null;
         Connection conn = null;
         try {
@@ -993,16 +1247,32 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return accountData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(int)|");
+}
+}
 
     private AccountDataBean getAccountData(int accountID, Connection conn) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(int, Connection)|");
+
         PreparedStatement stmt = getStatement(conn, getAccountSQL);
         stmt.setInt(1, accountID);
         ResultSet rs = stmt.executeQuery();
         AccountDataBean accountData = getAccountDataFromResultSet(rs);
         stmt.close();
         return accountData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountData(int, Connection)|");
+}
+}
 
     /*
     private AccountDataBean getAccountDataForUpdate(int accountID,
@@ -1035,6 +1305,10 @@ public class TradeDirect implements TradeServices {
      */
 
     private QuoteDataBean getQuoteData(Connection conn, String symbol) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuoteData(Connection, String)|");
+
         QuoteDataBean quoteData = null;
         PreparedStatement stmt = getStatement(conn, getQuoteSQL);
         stmt.setString(1, symbol);
@@ -1046,9 +1320,19 @@ public class TradeDirect implements TradeServices {
         }
         stmt.close();
         return quoteData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuoteData(Connection, String)|");
+}
+}
 
     private HoldingDataBean getHoldingData(int holdingID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldingData(int)|");
+
         HoldingDataBean holdingData = null;
         Connection conn = null;
         try {
@@ -1062,9 +1346,19 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return holdingData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldingData(int)|");
+}
+}
 
     private HoldingDataBean getHoldingData(Connection conn, int holdingID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldingData(Connection, int)|");
+
         HoldingDataBean holdingData = null;
         PreparedStatement stmt = getStatement(conn, getHoldingSQL);
         stmt.setInt(1, holdingID);
@@ -1077,7 +1371,13 @@ public class TradeDirect implements TradeServices {
 
         stmt.close();
         return holdingData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldingData(Connection, int)|");
+}
+}
 
     /*
     private OrderDataBean getOrderData(int orderID) throws Exception {
@@ -1098,6 +1398,10 @@ public class TradeDirect implements TradeServices {
      */
 
     private OrderDataBean getOrderData(Connection conn, int orderID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getOrderData(Connection, int)|");
+
         OrderDataBean orderData = null;
         if (Log.doTrace()) {
             Log.trace("TradeDirect:getOrderData(conn, " + orderID + ")");
@@ -1112,13 +1416,23 @@ public class TradeDirect implements TradeServices {
         }
         stmt.close();
         return orderData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getOrderData(Connection, int)|");
+}
+}
 
     /**
      * @see TradeServices#getAccountProfileData(String)
      */
     @Override
     public AccountProfileDataBean getAccountProfileData(String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileData(String)|");
+
         AccountProfileDataBean accountProfileData = null;
         Connection conn = null;
 
@@ -1137,9 +1451,19 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return accountProfileData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileData(String)|");
+}
+}
 
     private AccountProfileDataBean getAccountProfileData(Connection conn, String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileData(Connection, String)|");
+
         PreparedStatement stmt = getStatement(conn, getAccountProfileSQL);
         stmt.setString(1, userID);
 
@@ -1148,7 +1472,13 @@ public class TradeDirect implements TradeServices {
         AccountProfileDataBean accountProfileData = getAccountProfileDataFromResultSet(rs);
         stmt.close();
         return accountProfileData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileData(Connection, String)|");
+}
+}
 
     /*
     private AccountProfileDataBean getAccountProfileData(Integer accountID)
@@ -1177,6 +1507,10 @@ public class TradeDirect implements TradeServices {
      */
 
     private AccountProfileDataBean getAccountProfileData(Connection conn, Integer accountID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileData(Connection, Integer)|");
+
         PreparedStatement stmt = getStatement(conn, getAccountProfileForAccountSQL);
         stmt.setInt(1, accountID.intValue());
 
@@ -1185,13 +1519,23 @@ public class TradeDirect implements TradeServices {
         AccountProfileDataBean accountProfileData = getAccountProfileDataFromResultSet(rs);
         stmt.close();
         return accountProfileData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileData(Connection, Integer)|");
+}
+}
 
     /**
      * @see TradeServices#updateAccountProfile(AccountProfileDataBean)
      */
     @Override
     public AccountProfileDataBean updateAccountProfile(AccountProfileDataBean profileData) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateAccountProfile(AccountProfileDataBean)|");
+
         AccountProfileDataBean accountProfileData = null;
         Connection conn = null;
 
@@ -1212,9 +1556,19 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return accountProfileData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateAccountProfile(AccountProfileDataBean)|");
+}
+}
 
     private void creditAccountBalance(Connection conn, AccountDataBean accountData, BigDecimal credit) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::creditAccountBalance(Connection, AccountDataBean, BigDecimal)|");
+
         PreparedStatement stmt = getStatement(conn, creditAccountBalanceSQL);
 
         stmt.setBigDecimal(1, credit);
@@ -1223,11 +1577,21 @@ public class TradeDirect implements TradeServices {
         stmt.executeUpdate();
         stmt.close();
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::creditAccountBalance(Connection, AccountDataBean, BigDecimal)|");
+}
+}
 
     // Set Timestamp to zero to denote sell is inflight
     // UPDATE -- could add a "status" attribute to holding
     private void updateHoldingStatus(Connection conn, Integer holdingID, String symbol) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateHoldingStatus(Connection, Integer, String)|");
+
         Timestamp ts = new Timestamp(0);
         PreparedStatement stmt = getStatement(conn, "update holdingejb set purchasedate= ? where holdingid = ?");
 
@@ -1235,9 +1599,19 @@ public class TradeDirect implements TradeServices {
         stmt.setInt(2, holdingID.intValue());
         stmt.executeUpdate();
         stmt.close();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateHoldingStatus(Connection, Integer, String)|");
+}
+}
 
     private void updateOrderStatus(Connection conn, Integer orderID, String status) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateOrderStatus(Connection, Integer, String)|");
+
         PreparedStatement stmt = getStatement(conn, updateOrderStatusSQL);
 
         stmt.setString(1, status);
@@ -1245,18 +1619,38 @@ public class TradeDirect implements TradeServices {
         stmt.setInt(3, orderID.intValue());
         stmt.executeUpdate();
         stmt.close();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateOrderStatus(Connection, Integer, String)|");
+}
+}
 
     private void updateOrderHolding(Connection conn, int orderID, int holdingID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateOrderHolding(Connection, int, int)|");
+
         PreparedStatement stmt = getStatement(conn, updateOrderHoldingSQL);
 
         stmt.setInt(1, holdingID);
         stmt.setInt(2, orderID);
         stmt.executeUpdate();
         stmt.close();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateOrderHolding(Connection, int, int)|");
+}
+}
 
     private void updateAccountProfile(Connection conn, AccountProfileDataBean profileData) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateAccountProfile(Connection, AccountProfileDataBean)|");
+
         PreparedStatement stmt = getStatement(conn, updateAccountProfileSQL);
 
         stmt.setString(1, profileData.getPassword());
@@ -1268,7 +1662,13 @@ public class TradeDirect implements TradeServices {
 
         stmt.executeUpdate();
         stmt.close();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateAccountProfile(Connection, AccountProfileDataBean)|");
+}
+}
 
     /*
     private void updateQuoteVolume(Connection conn, QuoteDataBean quoteData,
@@ -1285,8 +1685,18 @@ public class TradeDirect implements TradeServices {
 
     @Override
     public QuoteDataBean updateQuotePriceVolume(String symbol, BigDecimal changeFactor, double sharesTraded) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateQuotePriceVolume(String, BigDecimal, double)|");
+
         return updateQuotePriceVolumeInt(symbol, changeFactor, sharesTraded, TradeConfig.getPublishQuotePriceChange());
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateQuotePriceVolume(String, BigDecimal, double)|");
+}
+}
 
     /**
      * Update a quote's price and volume
@@ -1303,6 +1713,10 @@ public class TradeDirect implements TradeServices {
      */
     public QuoteDataBean updateQuotePriceVolumeInt(String symbol, BigDecimal changeFactor, double sharesTraded, boolean publishQuotePriceChange)
             throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateQuotePriceVolumeInt(String, BigDecimal, double, boolean)|");
+
 
         if (TradeConfig.getUpdateQuotePrices() == false) {
             return new QuoteDataBean();
@@ -1350,9 +1764,19 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return quoteData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateQuotePriceVolumeInt(String, BigDecimal, double, boolean)|");
+}
+}
 
     private void updateQuotePriceVolume(Connection conn, String symbol, BigDecimal newPrice, double newVolume, double change) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateQuotePriceVolume(Connection, String, BigDecimal, double, double)|");
+
 
         PreparedStatement stmt = getStatement(conn, updateQuotePriceVolumeSQL);
 
@@ -1363,9 +1787,19 @@ public class TradeDirect implements TradeServices {
 
         stmt.executeUpdate();
         stmt.close();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::updateQuotePriceVolume(Connection, String, BigDecimal, double, double)|");
+}
+}
 
     private void publishQuotePriceChange(QuoteDataBean quoteData, BigDecimal oldPrice, BigDecimal changeFactor, double sharesTraded) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::publishQuotePriceChange(QuoteDataBean, BigDecimal, BigDecimal, double)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeDirect:publishQuotePrice PUBLISHING to MDB quoteData = " + quoteData);
         }
@@ -1395,7 +1829,13 @@ public class TradeDirect implements TradeServices {
             throw e; // pass exception back
 
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::publishQuotePriceChange(QuoteDataBean, BigDecimal, BigDecimal, double)|");
+}
+}
 
     /**
      * @see TradeServices#login(String, String)
@@ -1403,6 +1843,10 @@ public class TradeDirect implements TradeServices {
 
     @Override
     public AccountDataBean login(String userID, String password) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::login(String, String)|");
+
 
         AccountDataBean accountData = null;
         Connection conn = null;
@@ -1457,13 +1901,23 @@ public class TradeDirect implements TradeServices {
          * setLastLogin( new Timestamp(System.currentTimeMillis()) );
          * setLoginCount( getLoginCount() + 1 );
          */
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::login(String, String)|");
+}
+}
 
     /**
      * @see TradeServices#logout(String)
      */
     @Override
     public void logout(String userID) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::logout(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeDirect:logout - inSession(" + this.inSession + ")", userID);
         }
@@ -1482,7 +1936,13 @@ public class TradeDirect implements TradeServices {
         } finally {
             releaseConn(conn);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::logout(String)|");
+}
+}
 
     /**
      * @see TradeServices#register(String, String, String, String, String,
@@ -1492,6 +1952,10 @@ public class TradeDirect implements TradeServices {
     @Override
     public AccountDataBean register(String userID, String password, String fullname, String address, String email, String creditcard, BigDecimal openBalance)
             throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::register(String, String, String, String, String, String, BigDecimal)|");
+
 
         AccountDataBean accountData = null;
         Connection conn = null;
@@ -1543,9 +2007,19 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return accountData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::register(String, String, String, String, String, String, BigDecimal)|");
+}
+}
 
     private AccountDataBean getAccountDataFromResultSet(ResultSet rs) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountDataFromResultSet(ResultSet)|");
+
         AccountDataBean accountData = null;
 
         if (!rs.next()) {
@@ -1556,9 +2030,19 @@ public class TradeDirect implements TradeServices {
                     rs.getString("profile_userID"));
         }
         return accountData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountDataFromResultSet(ResultSet)|");
+}
+}
 
     private AccountProfileDataBean getAccountProfileDataFromResultSet(ResultSet rs) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileDataFromResultSet(ResultSet)|");
+
         AccountProfileDataBean accountProfileData = null;
 
         if (!rs.next()) {
@@ -1569,34 +2053,74 @@ public class TradeDirect implements TradeServices {
         }
 
         return accountProfileData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getAccountProfileDataFromResultSet(ResultSet)|");
+}
+}
 
     private HoldingDataBean getHoldingDataFromResultSet(ResultSet rs) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldingDataFromResultSet(ResultSet)|");
+
         HoldingDataBean holdingData = null;
 
         holdingData = new HoldingDataBean(new Integer(rs.getInt("holdingID")), rs.getDouble("quantity"), rs.getBigDecimal("purchasePrice"),
                 rs.getTimestamp("purchaseDate"), rs.getString("quote_symbol"));
         return holdingData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getHoldingDataFromResultSet(ResultSet)|");
+}
+}
 
     private QuoteDataBean getQuoteDataFromResultSet(ResultSet rs) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuoteDataFromResultSet(ResultSet)|");
+
         QuoteDataBean quoteData = null;
 
         quoteData = new QuoteDataBean(rs.getString("symbol"), rs.getString("companyName"), rs.getDouble("volume"), rs.getBigDecimal("price"),
                 rs.getBigDecimal("open1"), rs.getBigDecimal("low"), rs.getBigDecimal("high"), rs.getDouble("change1"));
         return quoteData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getQuoteDataFromResultSet(ResultSet)|");
+}
+}
 
     private OrderDataBean getOrderDataFromResultSet(ResultSet rs) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getOrderDataFromResultSet(ResultSet)|");
+
         OrderDataBean orderData = null;
 
         orderData = new OrderDataBean(new Integer(rs.getInt("orderID")), rs.getString("orderType"), rs.getString("orderStatus"), rs.getTimestamp("openDate"),
                 rs.getTimestamp("completionDate"), rs.getDouble("quantity"), rs.getBigDecimal("price"), rs.getBigDecimal("orderFee"),
                 rs.getString("quote_symbol"));
         return orderData;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getOrderDataFromResultSet(ResultSet)|");
+}
+}
 
     public String checkDBProductName() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::checkDBProductName()|");
+
         Connection conn = null;
         String dbProductName = null;
 
@@ -1614,9 +2138,19 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return dbProductName;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::checkDBProductName()|");
+}
+}
 
     public boolean recreateDBTables(Object[] sqlBuffer, java.io.PrintWriter out) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::recreateDBTables(Object[], java.io.PrintWriter)|");
+
         // Clear MDB Statistics
         MDBStats.getInstance().reset();
 
@@ -1651,10 +2185,20 @@ public class TradeDirect implements TradeServices {
             releaseConn(conn);
         }
         return success;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::recreateDBTables(Object[], java.io.PrintWriter)|");
+}
+}
 
     @Override
     public RunStatsDataBean resetTrade(boolean deleteAll) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::resetTrade(boolean)|");
+
         // Clear MDB Statistics
         MDBStats.getInstance().reset();
         // Reset Trade
@@ -1843,9 +2387,19 @@ public class TradeDirect implements TradeServices {
         }
         return runStatsData;
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::resetTrade(boolean)|");
+}
+}
 
     private void releaseConn(Connection conn) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::releaseConn(Connection)|");
+
         try {
             if (conn != null) {
                 conn.close();
@@ -1859,14 +2413,30 @@ public class TradeDirect implements TradeServices {
         } catch (Exception e) {
             Log.error("TradeDirect:releaseConnection -- failed to close connection", e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::releaseConn(Connection)|");
+}
+}
 
     /*
      * Lookup the TradeData datasource
      */
     private void getDataSource() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getDataSource()|");
+
         datasource = (DataSource) context.lookup(dsName);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getDataSource()|");
+}
+}
 
     /*
      * Allocate a new connection to the datasource
@@ -1876,6 +2446,10 @@ public class TradeDirect implements TradeServices {
     private static Integer lock = new Integer(0);
 
     private Connection getConn() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getConn()|");
+
 
         Connection conn = null;
         if (datasource == null) {
@@ -1894,11 +2468,27 @@ public class TradeDirect implements TradeServices {
         }
 
         return conn;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getConn()|");
+}
+}
 
     public Connection getConnPublic() throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getConnPublic()|");
+
         return getConn();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getConnPublic()|");
+}
+}
 
     /*
      * Commit the provided connection if not under Global Transaction scope -
@@ -1906,17 +2496,31 @@ public class TradeDirect implements TradeServices {
      * will perform the commit
      */
     private void commit(Connection conn) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::commit(Connection)|");
+
         if (!inSession) {
             if ((getInGlobalTxn() == false) && (conn != null)) {
                 conn.commit();
             }
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::commit(Connection)|");
+}
+}
 
     /*
      * Rollback the statement for the given connection
      */
     private void rollBack(Connection conn, Exception e) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::rollBack(Connection, Exception)|");
+
         if (!inSession) {
             Log.log("TradeDirect:rollBack -- rolling back conn due to previously caught exception -- inGlobalTxn=" + getInGlobalTxn());
             if ((getInGlobalTxn() == false) && (conn != null)) {
@@ -1926,18 +2530,44 @@ public class TradeDirect implements TradeServices {
                 // so the Global txn manager will rollBack
             }
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::rollBack(Connection, Exception)|");
+}
+}
 
     /*
      * Allocate a new prepared statment for this connection
      */
     private PreparedStatement getStatement(Connection conn, String sql) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getStatement(Connection, String)|");
+
         return conn.prepareStatement(sql);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getStatement(Connection, String)|");
+}
+}
 
     private PreparedStatement getStatement(Connection conn, String sql, int type, int concurrency) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getStatement(Connection, String, int, int)|");
+
         return conn.prepareStatement(sql, type, concurrency);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getStatement(Connection, String, int, int)|");
+}
+}
 
     private static final String createQuoteSQL = "insert into quoteejb " + "( symbol, companyName, volume, price, open1, low, high, change1 ) "
             + "VALUES (  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  )";
@@ -2016,6 +2646,10 @@ public class TradeDirect implements TradeServices {
     private static boolean initialized = false;
 
     public static synchronized void init() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::init()|");
+
         if (initialized) {
             return;
         }
@@ -2075,9 +2709,19 @@ public class TradeDirect implements TradeServices {
         }
 
         initialized = true;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::init()|");
+}
+}
 
     public static void destroy() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::destroy()|");
+
         try {
             if (!initialized) {
                 return;
@@ -2086,7 +2730,13 @@ public class TradeDirect implements TradeServices {
         } catch (Exception e) {
             Log.error("TradeDirect:destroy", e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::destroy()|");
+}
+}
 
     private static InitialContext context;
 
@@ -2104,8 +2754,18 @@ public class TradeDirect implements TradeServices {
      * @return Returns a boolean
      */
     private boolean getInGlobalTxn() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getInGlobalTxn()|");
+
         return inGlobalTxn;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::getInGlobalTxn()|");
+}
+}
 
     /**
      * Sets the inGlobalTxn
@@ -2114,7 +2774,17 @@ public class TradeDirect implements TradeServices {
      *            The inGlobalTxn to set
      */
     private void setInGlobalTxn(boolean inGlobalTxn) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::setInGlobalTxn(boolean)|");
+
         this.inGlobalTxn = inGlobalTxn;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/TradeDirect.java::com.ibm.websphere.samples.daytrader.direct.TradeDirect::setInGlobalTxn(boolean)|");
+}
+}
 
 }

@@ -53,10 +53,24 @@ public class MarketSummaryDataBean implements Serializable {
     private BigDecimal gainPercent = null;
 
     public MarketSummaryDataBean() {
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::MarketSummaryDataBean()|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::MarketSummaryDataBean()|");
+}
+}
 
     public MarketSummaryDataBean(BigDecimal TSIA, BigDecimal openTSIA, double volume, Collection<QuoteDataBean> topGainers, Collection<QuoteDataBean> topLosers// , Collection topVolume
     ) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::MarketSummaryDataBean(BigDecimal, BigDecimal, double, Collection, Collection)|");
+
         setTSIA(TSIA);
         setOpenTSIA(openTSIA);
         setVolume(volume);
@@ -65,9 +79,19 @@ public class MarketSummaryDataBean implements Serializable {
         setSummaryDate(new java.sql.Date(System.currentTimeMillis()));
         gainPercent = FinancialUtils.computeGainPercent(getTSIA(), getOpenTSIA());
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::MarketSummaryDataBean(BigDecimal, BigDecimal, double, Collection, Collection)|");
+}
+}
 
     public static MarketSummaryDataBean getRandomInstance() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getRandomInstance()|");
+
         Collection<QuoteDataBean> gain = new ArrayList<QuoteDataBean>();
         Collection<QuoteDataBean> lose = new ArrayList<QuoteDataBean>();
 
@@ -80,10 +104,20 @@ public class MarketSummaryDataBean implements Serializable {
         }
 
         return new MarketSummaryDataBean(TradeConfig.rndBigDecimal(1000000.0f), TradeConfig.rndBigDecimal(1000000.0f), TradeConfig.rndQuantity(), gain, lose);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getRandomInstance()|");
+}
+}
 
     @Override
     public String toString() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::toString()|");
+
         String ret = "\n\tMarket Summary at: " + getSummaryDate() + "\n\t\t        TSIA:" + getTSIA() + "\n\t\t    openTSIA:" + getOpenTSIA()
                 + "\n\t\t        gain:" + getGainPercent() + "\n\t\t      volume:" + getVolume();
 
@@ -103,9 +137,19 @@ public class MarketSummaryDataBean implements Serializable {
             ret += ("\n\t\t\t" + quoteData.toString());
         }
         return ret;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::toString()|");
+}
+}
 
     public String toHTML() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::toHTML()|");
+
         String ret = "<BR>Market Summary at: " + getSummaryDate() + "<LI>        TSIA:" + getTSIA() + "</LI>" + "<LI>    openTSIA:" + getOpenTSIA() + "</LI>"
                 + "<LI>      volume:" + getVolume() + "</LI>";
         if ((getTopGainers() == null) || (getTopLosers() == null)) {
@@ -125,9 +169,19 @@ public class MarketSummaryDataBean implements Serializable {
             ret += ("<LI>" + quoteData.toString() + "</LI>");
         }
         return ret;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::toHTML()|");
+}
+}
 
     public JsonObject toJSON() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::toJSON()|");
+
         
         JsonObjectBuilder jObjectBuilder = Json.createObjectBuilder();
         
@@ -157,18 +211,44 @@ public class MarketSummaryDataBean implements Serializable {
 
         return jObjectBuilder.build();
         
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::toJSON()|");
+}
+}
 
     public void print() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::print()|");
+
         Log.log(this.toString());
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::print()|");
+}
+}
 
     public BigDecimal getGainPercent() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getGainPercent()|");
+
         if (gainPercent == null) {
             gainPercent = FinancialUtils.computeGainPercent(getTSIA(), getOpenTSIA());
         }
         return gainPercent;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getGainPercent()|");
+}
+}
 
     /**
      * Gets the tSIA
@@ -176,8 +256,18 @@ public class MarketSummaryDataBean implements Serializable {
      * @return Returns a BigDecimal
      */
     public BigDecimal getTSIA() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getTSIA()|");
+
         return TSIA;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getTSIA()|");
+}
+}
 
     /**
      * Sets the tSIA
@@ -186,8 +276,18 @@ public class MarketSummaryDataBean implements Serializable {
      *            The tSIA to set
      */
     public void setTSIA(BigDecimal tSIA) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setTSIA(BigDecimal)|");
+
         TSIA = tSIA;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setTSIA(BigDecimal)|");
+}
+}
 
     /**
      * Gets the openTSIA
@@ -195,8 +295,18 @@ public class MarketSummaryDataBean implements Serializable {
      * @return Returns a BigDecimal
      */
     public BigDecimal getOpenTSIA() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getOpenTSIA()|");
+
         return openTSIA;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getOpenTSIA()|");
+}
+}
 
     /**
      * Sets the openTSIA
@@ -205,8 +315,18 @@ public class MarketSummaryDataBean implements Serializable {
      *            The openTSIA to set
      */
     public void setOpenTSIA(BigDecimal openTSIA) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setOpenTSIA(BigDecimal)|");
+
         this.openTSIA = openTSIA;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setOpenTSIA(BigDecimal)|");
+}
+}
 
     /**
      * Gets the volume
@@ -214,8 +334,18 @@ public class MarketSummaryDataBean implements Serializable {
      * @return Returns a BigDecimal
      */
     public double getVolume() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getVolume()|");
+
         return volume;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getVolume()|");
+}
+}
 
     /**
      * Sets the volume
@@ -224,8 +354,18 @@ public class MarketSummaryDataBean implements Serializable {
      *            The volume to set
      */
     public void setVolume(double volume) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setVolume(double)|");
+
         this.volume = volume;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setVolume(double)|");
+}
+}
 
     /**
      * Gets the topGainers
@@ -233,8 +373,18 @@ public class MarketSummaryDataBean implements Serializable {
      * @return Returns a Collection
      */
     public Collection<QuoteDataBean> getTopGainers() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getTopGainers()|");
+
         return topGainers;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getTopGainers()|");
+}
+}
 
     /**
      * Sets the topGainers
@@ -243,8 +393,18 @@ public class MarketSummaryDataBean implements Serializable {
      *            The topGainers to set
      */
     public void setTopGainers(Collection<QuoteDataBean> topGainers) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setTopGainers(Collection)|");
+
         this.topGainers = topGainers;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setTopGainers(Collection)|");
+}
+}
 
     /**
      * Gets the topLosers
@@ -252,8 +412,18 @@ public class MarketSummaryDataBean implements Serializable {
      * @return Returns a Collection
      */
     public Collection<QuoteDataBean> getTopLosers() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getTopLosers()|");
+
         return topLosers;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getTopLosers()|");
+}
+}
 
     /**
      * Sets the topLosers
@@ -262,8 +432,18 @@ public class MarketSummaryDataBean implements Serializable {
      *            The topLosers to set
      */
     public void setTopLosers(Collection<QuoteDataBean> topLosers) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setTopLosers(Collection)|");
+
         this.topLosers = topLosers;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setTopLosers(Collection)|");
+}
+}
 
     /**
      * Gets the summaryDate
@@ -271,8 +451,18 @@ public class MarketSummaryDataBean implements Serializable {
      * @return Returns a Date
      */
     public Date getSummaryDate() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getSummaryDate()|");
+
         return summaryDate;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::getSummaryDate()|");
+}
+}
 
     /**
      * Sets the summaryDate
@@ -281,7 +471,17 @@ public class MarketSummaryDataBean implements Serializable {
      *            The summaryDate to set
      */
     public void setSummaryDate(Date summaryDate) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setSummaryDate(Date)|");
+
         this.summaryDate = summaryDate;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/beans/MarketSummaryDataBean.java::com.ibm.websphere.samples.daytrader.beans.MarketSummaryDataBean::setSummaryDate(Date)|");
+}
+}
 
 }

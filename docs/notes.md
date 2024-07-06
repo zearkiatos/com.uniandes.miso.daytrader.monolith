@@ -15,5 +15,7 @@ $ mono2micro install -c docker
 # Add BlueJay
 
 ```txt
-$ docker run --platform linux/arm64 -e LICENSE=accept --rm -it -v /Users/pedrocapriles/Documents/projects/java:/var/application ibmcom/mono2micro-bluejay /var/application/com.uniandes.miso.daytrader.monolith
+$ docker run -e LICENSE=accept --rm -it -v /Users/pedrocapriles/Documents/projects/java:/var/application ibmcom/mono2micro-bluejay /var/application/com.uniandes.miso.daytrader.monolith
+
+ docker run -e LICENSE=accept --rm -it -v "D:\projects\java":/var/application ibmcom/mono2micro-bluejay /var/application/com.uniandes.miso.daytrader.monolith
 ```

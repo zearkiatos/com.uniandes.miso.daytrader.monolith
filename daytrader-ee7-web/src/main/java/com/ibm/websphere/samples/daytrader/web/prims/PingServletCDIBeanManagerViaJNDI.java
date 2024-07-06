@@ -41,6 +41,10 @@ public class PingServletCDIBeanManagerViaJNDI extends HttpServlet {
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletCDIBeanManagerViaJNDI.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletCDIBeanManagerViaJNDI::doGet(HttpServletRequest, HttpServletResponse)|");
+
 
         PrintWriter pw = response.getWriter();
         pw.write("<html><head><title>Ping Servlet CDI Bean Manager</title></head>"
@@ -56,7 +60,13 @@ public class PingServletCDIBeanManagerViaJNDI extends HttpServlet {
         pw.flush();
         pw.close();
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletCDIBeanManagerViaJNDI.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletCDIBeanManagerViaJNDI::doGet(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     /**
      * called when the class is loaded to initialize the servlet
@@ -66,8 +76,18 @@ public class PingServletCDIBeanManagerViaJNDI extends HttpServlet {
      **/
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletCDIBeanManagerViaJNDI.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletCDIBeanManagerViaJNDI::init(ServletConfig)|");
+
         super.init(config);
         initTime = new java.util.Date().toString();
 
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServletCDIBeanManagerViaJNDI.java::com.ibm.websphere.samples.daytrader.web.prims.PingServletCDIBeanManagerViaJNDI::init(ServletConfig)|");
+}
+}
 }

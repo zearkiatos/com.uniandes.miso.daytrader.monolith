@@ -51,6 +51,10 @@ public class DTStreamer3MDB implements MessageListener {
 
     /** Creates a new instance of TradeSteamerMDB */
     public DTStreamer3MDB() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTStreamer3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTStreamer3MDB::DTStreamer3MDB()|");
+
         if (Log.doTrace()) {
             Log.trace("DTStreamer3MDB:DTStreamer3MDB()");
         }
@@ -58,7 +62,13 @@ public class DTStreamer3MDB implements MessageListener {
             statInterval = 10000;
         }
         mdbStats = MDBStats.getInstance();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTStreamer3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTStreamer3MDB::DTStreamer3MDB()|");
+}
+}
 
     @Inject
     @WebSocketJMSMessage
@@ -66,6 +76,10 @@ public class DTStreamer3MDB implements MessageListener {
 
     @Override
     public void onMessage(Message message) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTStreamer3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTStreamer3MDB::onMessage(Message)|");
+
 
         try {
             if (Log.doTrace()) {
@@ -132,6 +146,12 @@ public class DTStreamer3MDB implements MessageListener {
              //UPDATE - Not rolling back for now -- so error messages are not redelivered
              mdc.setRollbackOnly();
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/DTStreamer3MDB.java::com.ibm.websphere.samples.daytrader.ejb3.DTStreamer3MDB::onMessage(Message)|");
+}
+}
 
 }

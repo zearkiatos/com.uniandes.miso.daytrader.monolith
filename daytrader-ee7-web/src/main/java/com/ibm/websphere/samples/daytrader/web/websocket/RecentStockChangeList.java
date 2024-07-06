@@ -36,6 +36,10 @@ public class RecentStockChangeList {
     private static List<Message> stockChanges = Collections.synchronizedList(new LinkedList<Message>());
        
     public static void addStockChange(Message message) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/RecentStockChangeList.java::com.ibm.websphere.samples.daytrader.web.websocket.RecentStockChangeList::addStockChange(Message)|");
+
         
         stockChanges.add(0, message);
         
@@ -43,9 +47,19 @@ public class RecentStockChangeList {
         if(stockChanges.size() > 5) {
             stockChanges.remove(5);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/RecentStockChangeList.java::com.ibm.websphere.samples.daytrader.web.websocket.RecentStockChangeList::addStockChange(Message)|");
+}
+}
     
     public static JsonObject stockChangesInJSON() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/RecentStockChangeList.java::com.ibm.websphere.samples.daytrader.web.websocket.RecentStockChangeList::stockChangesInJSON()|");
+
         
         JsonObjectBuilder jObjectBuilder = Json.createObjectBuilder();
         
@@ -73,10 +87,26 @@ public class RecentStockChangeList {
         }
         
         return jObjectBuilder.build();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/RecentStockChangeList.java::com.ibm.websphere.samples.daytrader.web.websocket.RecentStockChangeList::stockChangesInJSON()|");
+}
+}
     
     public static boolean isEmpty() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/RecentStockChangeList.java::com.ibm.websphere.samples.daytrader.web.websocket.RecentStockChangeList::isEmpty()|");
+
         return stockChanges.isEmpty();
-    }        
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/RecentStockChangeList.java::com.ibm.websphere.samples.daytrader.web.websocket.RecentStockChangeList::isEmpty()|");
+}
+}        
 
 }

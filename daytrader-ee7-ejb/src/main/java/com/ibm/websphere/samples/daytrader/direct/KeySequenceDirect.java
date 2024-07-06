@@ -31,6 +31,10 @@ public class KeySequenceDirect {
     private static HashMap<String, Collection<?>> keyMap = new HashMap<String, Collection<?>>();
 
     public static synchronized Integer getNextID(Connection conn, String keyName, boolean inSession, boolean inGlobalTxn) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/KeySequenceDirect.java::com.ibm.websphere.samples.daytrader.direct.KeySequenceDirect::getNextID(Connection, String, boolean, boolean)|");
+
         Integer nextID = null;
         // First verify we have allocated a block of keys
         // for this key name
@@ -52,9 +56,19 @@ public class KeySequenceDirect {
             Log.trace("KeySequenceDirect:getNextID inSession(" + inSession + ") - return new PK ID for Entity type: " + keyName + " ID=" + nextID);
         }
         return nextID;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/KeySequenceDirect.java::com.ibm.websphere.samples.daytrader.direct.KeySequenceDirect::getNextID(Connection, String, boolean, boolean)|");
+}
+}
 
     private static Collection<?> allocNewBlock(Connection conn, String keyName, boolean inSession, boolean inGlobalTxn) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/KeySequenceDirect.java::com.ibm.websphere.samples.daytrader.direct.KeySequenceDirect::allocNewBlock(Connection, String, boolean, boolean)|");
+
         try {
 
             if (inGlobalTxn == false && !inSession) {
@@ -103,7 +117,13 @@ public class KeySequenceDirect {
             Log.error(e, error);
             throw new Exception(error + e.toString());
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/direct/KeySequenceDirect.java::com.ibm.websphere.samples.daytrader.direct.KeySequenceDirect::allocNewBlock(Connection, String, boolean, boolean)|");
+}
+}
 
     private static final String getKeyForUpdateSQL = "select * from keygenejb kg where kg.keyname = ?  for update";
 

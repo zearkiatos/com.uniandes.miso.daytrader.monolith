@@ -27,14 +27,38 @@ public class JsonDecoder implements Decoder.Text<JsonMessage> {
 
     @Override
     public void destroy() {
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::destroy()|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::destroy()|");
+}
+}
 
     @Override
     public void init(EndpointConfig ec) {
-    }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::init(EndpointConfig)|");
+
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::init(EndpointConfig)|");
+}
+}
 
     @Override
     public JsonMessage decode(String json) throws DecodeException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::decode(String)|");
+
         JsonObject jsonObject = Json.createReader(new StringReader(json)).readObject();
         
         JsonMessage message = new JsonMessage();
@@ -42,16 +66,32 @@ public class JsonDecoder implements Decoder.Text<JsonMessage> {
         message.setValue(jsonObject.getString("value"));
         
         return message;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::decode(String)|");
+}
+}
 
     @Override
     public boolean willDecode(String json) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::willDecode(String)|");
+
         try {
             Json.createReader(new StringReader(json)).readObject();
             return true;
           } catch (Exception e) {
             return false;
           }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/websocket/JsonDecoder.java::com.ibm.websphere.samples.daytrader.web.websocket.JsonDecoder::willDecode(String)|");
+}
+}
 
 }

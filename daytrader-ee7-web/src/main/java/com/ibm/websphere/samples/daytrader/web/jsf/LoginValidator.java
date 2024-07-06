@@ -36,10 +36,24 @@ public class LoginValidator implements Validator{
 
   // Simple JSF validator to make sure username starts with uid: and at least 1 number.
   public LoginValidator() {
-  }
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/LoginValidator.java::com.ibm.websphere.samples.daytrader.web.jsf.LoginValidator::LoginValidator()|");
+
+  
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/LoginValidator.java::com.ibm.websphere.samples.daytrader.web.jsf.LoginValidator::LoginValidator()|");
+}
+}
 
   @Override
   public void validate(FacesContext context, UIComponent component, Object value) throws ValidatorException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/LoginValidator.java::com.ibm.websphere.samples.daytrader.web.jsf.LoginValidator::validate(FacesContext, UIComponent, Object)|");
+
 	  if (Log.doTrace()) {
 		  Log.trace("LoginValidator.validate","Validating submitted login name -- " + value.toString());
 	  }
@@ -51,5 +65,11 @@ public class LoginValidator implements Validator{
       
 		  throw new ValidatorException(msg);
 	  }
-  	}
+  	
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/jsf/LoginValidator.java::com.ibm.websphere.samples.daytrader.web.jsf.LoginValidator::validate(FacesContext, UIComponent, Object)|");
+}
+}
 }

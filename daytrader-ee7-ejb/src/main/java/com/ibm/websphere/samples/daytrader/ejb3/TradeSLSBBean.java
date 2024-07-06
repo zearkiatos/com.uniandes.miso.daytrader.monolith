@@ -107,23 +107,47 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
 
     /** Creates a new instance of TradeSLSBBean */
     public TradeSLSBBean() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::TradeSLSBBean()|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:ejbCreate  -- JNDI lookups of EJB and JMS resources");
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::TradeSLSBBean()|");
+}
+}
 
     @Override
     public MarketSummaryDataBean getMarketSummary() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getMarketSummary()|");
+
 
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getMarketSummary -- getting market summary");
         }
 
         return marketSummarySingleton.getMarketSummaryDataBean();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getMarketSummary()|");
+}
+}
 
     @Override
     public OrderDataBean buy(String userID, String symbol, double quantity, int orderProcessingMode) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::buy(String, String, double, int)|");
+
         OrderDataBean order;
         BigDecimal total;
         try {
@@ -161,10 +185,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
             throw new EJBException(e);
         }
         return order;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::buy(String, String, double, int)|");
+}
+}
 
     @Override
     public OrderDataBean sell(final String userID, final Integer holdingID, int orderProcessingMode) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::sell(String, Integer, int)|");
+
         OrderDataBean order;
         BigDecimal total;
         try {
@@ -218,10 +252,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
             throw new EJBException("TradeSLSBBean:sell(" + userID + "," + holdingID + ")", e);
         }
         return order;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::sell(String, Integer, int)|");
+}
+}
 
     @Override
     public void queueOrder(Integer orderID, boolean twoPhase) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::queueOrder(Integer, boolean)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:queueOrder", orderID);
         }
@@ -249,10 +293,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
                 throw new EJBException(e.getMessage(), e); // pass the exception
             }
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::queueOrder(Integer, boolean)|");
+}
+}
 
     @Override
     public OrderDataBean completeOrder(Integer orderID, boolean twoPhase) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::completeOrder(Integer, boolean)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:completeOrder", orderID + " twoPhase=" + twoPhase);
         }  
@@ -326,25 +380,55 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
        
         
         return order;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::completeOrder(Integer, boolean)|");
+}
+}
 
     @Override
     public void cancelOrder(Integer orderID, boolean twoPhase) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::cancelOrder(Integer, boolean)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:cancelOrder", orderID + " twoPhase=" + twoPhase);
         }
 
         OrderDataBean order = entityManager.find(OrderDataBean.class, orderID);
         order.cancel();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::cancelOrder(Integer, boolean)|");
+}
+}
 
     @Override
     public void orderCompleted(String userID, Integer orderID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::orderCompleted(String, Integer)|");
+
         throw new UnsupportedOperationException("TradeSLSBBean:orderCompleted method not supported");
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::orderCompleted(String, Integer)|");
+}
+}
 
     @Override
     public Collection<OrderDataBean> getOrders(String userID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getOrders(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getOrders", userID);
         }
@@ -352,10 +436,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         AccountProfileDataBean profile = entityManager.find(AccountProfileDataBean.class, userID);
         AccountDataBean account = profile.getAccount();
         return account.getOrders();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getOrders(String)|");
+}
+}
 
     @Override
     public Collection<OrderDataBean> getClosedOrders(String userID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getClosedOrders(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getClosedOrders", userID);
         }
@@ -391,10 +485,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
             Log.error("TradeSLSBBean.getClosedOrders", e);
             throw new EJBException("TradeSLSBBean.getClosedOrders - error", e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getClosedOrders(String)|");
+}
+}
 
     @Override
     public QuoteDataBean createQuote(String symbol, String companyName, BigDecimal price) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::createQuote(String, String, BigDecimal)|");
+
         try {
             QuoteDataBean quote = new QuoteDataBean(symbol, companyName, 0, price, price, price, price, 0);
             entityManager.persist(quote);
@@ -406,29 +510,59 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
             Log.error("TradeSLSBBean:createQuote -- exception creating Quote", e);
             throw new EJBException(e);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::createQuote(String, String, BigDecimal)|");
+}
+}
 
     @Override
     public QuoteDataBean getQuote(String symbol) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getQuote(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getQuote", symbol);
         }
 
         return entityManager.find(QuoteDataBean.class, symbol);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getQuote(String)|");
+}
+}
 
     @Override
     public Collection<QuoteDataBean> getAllQuotes() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getAllQuotes()|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getAllQuotes");
         }
 
         TypedQuery<QuoteDataBean> query = entityManager.createNamedQuery("quoteejb.allQuotes",QuoteDataBean.class);
         return query.getResultList();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getAllQuotes()|");
+}
+}
 
     @Override
     public QuoteDataBean updateQuotePriceVolume(String symbol, BigDecimal changeFactor, double sharesTraded) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::updateQuotePriceVolume(String, BigDecimal, double)|");
+
         if (!TradeConfig.getUpdateQuotePrices()) {
             return new QuoteDataBean();
         }
@@ -460,10 +594,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         context.getBusinessObject(TradeSLSBLocal.class).publishQuotePriceChange(quote, oldPrice, changeFactor, sharesTraded);
        
         return quote;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::updateQuotePriceVolume(String, BigDecimal, double)|");
+}
+}
 
     @Override
     public Collection<HoldingDataBean> getHoldings(String userID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getHoldings(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getHoldings", userID);
         }
@@ -476,18 +620,38 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         TypedQuery<HoldingDataBean> typedQuery = entityManager.createQuery(criteriaQuery);
                
         return typedQuery.getResultList();
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getHoldings(String)|");
+}
+}
 
     @Override
     public HoldingDataBean getHolding(Integer holdingID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getHolding(Integer)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getHolding", holdingID);
         }
         return entityManager.find(HoldingDataBean.class, holdingID);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getHolding(Integer)|");
+}
+}
 
     @Override
     public AccountDataBean getAccountData(String userID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getAccountData(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getAccountData", userID);
         }
@@ -499,19 +663,39 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         account.setProfileID(profile.getUserID());
         
         return account;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getAccountData(String)|");
+}
+}
 
     @Override
     public AccountProfileDataBean getAccountProfileData(String userID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getAccountProfileData(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:getProfileData", userID);
         }
 
         return entityManager.find(AccountProfileDataBean.class, userID);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::getAccountProfileData(String)|");
+}
+}
 
     @Override
     public AccountProfileDataBean updateAccountProfile(AccountProfileDataBean profileData) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::updateAccountProfile(AccountProfileDataBean)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:updateAccountProfileData", profileData);
         }
@@ -526,10 +710,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         entityManager.merge(temp);
 
         return temp;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::updateAccountProfile(AccountProfileDataBean)|");
+}
+}
 
     @Override
     public AccountDataBean login(String userID, String password) throws RollbackException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::login(String, String)|");
+
         AccountProfileDataBean profile = entityManager.find(AccountProfileDataBean.class, userID);
 
         if (profile == null) {
@@ -547,10 +741,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         }
         
         return account;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::login(String, String)|");
+}
+}
 
     @Override
     public void logout(String userID) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::logout(String)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:logout", userID);
         }
@@ -564,10 +768,20 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
             Log.trace("TradeSLSBBean:logout(" + userID + ") success");
         }
         
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::logout(String)|");
+}
+}
 
     @Override
     public AccountDataBean register(String userID, String password, String fullname, String address, String email, String creditcard, BigDecimal openBalance) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::register(String, String, String, String, String, String, BigDecimal)|");
+
         AccountDataBean account = null;
         AccountProfileDataBean profile = null;
 
@@ -593,20 +807,40 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         }
 
         return account;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::register(String, String, String, String, String, String, BigDecimal)|");
+}
+}
 
     @Override
     @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public RunStatsDataBean resetTrade(boolean deleteAll) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::resetTrade(boolean)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:resetTrade", deleteAll);
         }
 
         return new com.ibm.websphere.samples.daytrader.direct.TradeDirect(false).resetTrade(deleteAll);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::resetTrade(boolean)|");
+}
+}
 
     @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
     public void publishQuotePriceChange(QuoteDataBean quote, BigDecimal oldPrice, BigDecimal changeFactor, double sharesTraded) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::publishQuotePriceChange(QuoteDataBean, BigDecimal, BigDecimal, double)|");
+
         if (!TradeConfig.getPublishQuotePriceChange()) {
             return;
         }
@@ -638,9 +872,19 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         
         
         
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::publishQuotePriceChange(QuoteDataBean, BigDecimal, BigDecimal, double)|");
+}
+}
 
     private OrderDataBean createOrder(AccountDataBean account, QuoteDataBean quote, HoldingDataBean holding, String orderType, double quantity) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::createOrder(AccountDataBean, QuoteDataBean, HoldingDataBean, String, double)|");
+
 
         OrderDataBean order;
 
@@ -657,15 +901,35 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
             throw new EJBException("TradeSLSBBean:createOrder -- failed to create Order. Check that the symbol exists in the database.", e);
         }
         return order;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::createOrder(AccountDataBean, QuoteDataBean, HoldingDataBean, String, double)|");
+}
+}
 
     private HoldingDataBean createHolding(AccountDataBean account, QuoteDataBean quote, double quantity, BigDecimal purchasePrice) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::createHolding(AccountDataBean, QuoteDataBean, double, BigDecimal)|");
+
         HoldingDataBean newHolding = new HoldingDataBean(quantity, purchasePrice, new Timestamp(System.currentTimeMillis()), account, quote);
         entityManager.persist(newHolding);
         return newHolding;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::createHolding(AccountDataBean, QuoteDataBean, double, BigDecimal)|");
+}
+}
 
     public double investmentReturn(double investment, double NetValue) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::investmentReturn(double, double)|");
+
         if (Log.doTrace()) {
             Log.trace("TradeSLSBBean:investmentReturn");
         }
@@ -673,9 +937,19 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
         double diff = NetValue - investment;
         double ir = diff / investment;
         return ir;
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::investmentReturn(double, double)|");
+}
+}
 
     public QuoteDataBean pingTwoPhase(String symbol) throws Exception {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::pingTwoPhase(String)|");
+
       
     	if (Log.doTrace()) {
     		Log.trace("TradeSLSBBean:pingTwoPhase", symbol);
@@ -698,24 +972,50 @@ public class TradeSLSBBean implements TradeSLSBRemote, TradeSLSBLocal {
     	}
             	
     	return quoteData;
-    } 
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::pingTwoPhase(String)|");
+}
+} 
     
     class quotePriceComparator implements Comparator<Object> {
 
         @Override
         public int compare(Object quote1, Object quote2) {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean.quotePriceComparator::compare(Object, Object)|");
+
             double change1 = ((QuoteDataBean) quote1).getChange();
             double change2 = ((QuoteDataBean) quote2).getChange();
             return new Double(change2).compareTo(change1);
-        }
+        
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean.quotePriceComparator::compare(Object, Object)|");
+}
+}
     }
 
     @PostConstruct
     public void postConstruct() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::postConstruct()|");
+
                
         if (Log.doTrace()) {
             Log.trace("updateQuotePrices: " + TradeConfig.getUpdateQuotePrices());
             Log.trace("publishQuotePriceChange: " + TradeConfig.getPublishQuotePriceChange());
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java::com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean::postConstruct()|");
+}
+}
 }

@@ -51,6 +51,10 @@ public class TradeScenarioServlet extends HttpServlet {
      */
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::init(ServletConfig)|");
+
         super.init(config);
         java.util.Enumeration<String> en = config.getInitParameterNames();
         while (en.hasMoreElements()) {
@@ -58,7 +62,13 @@ public class TradeScenarioServlet extends HttpServlet {
             String value = config.getInitParameter(parm);
             TradeConfig.setConfigParam(parm, value);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::init(ServletConfig)|");
+}
+}
 
     /**
      * Returns a string that contains information about TradeScenarioServlet
@@ -67,8 +77,18 @@ public class TradeScenarioServlet extends HttpServlet {
      */
     @Override
     public java.lang.String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::getServletInfo()|");
+
         return "TradeScenarioServlet emulates a population of web users";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::getServletInfo()|");
+}
+}
 
     /**
      * Process incoming HTTP GET requests
@@ -80,8 +100,18 @@ public class TradeScenarioServlet extends HttpServlet {
      */
     @Override
     public void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+
         performTask(request, response);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+}
+}
 
     /**
      * Process incoming HTTP POST requests
@@ -93,8 +123,18 @@ public class TradeScenarioServlet extends HttpServlet {
      */
     @Override
     public void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+
         performTask(request, response);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+}
+}
 
     /**
      * Main service method for TradeScenarioServlet
@@ -105,6 +145,10 @@ public class TradeScenarioServlet extends HttpServlet {
      *            Object that encapsulates the response from the servlet
      */
     public void performTask(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::performTask(HttpServletRequest, HttpServletResponse)|");
+
 
         // Scenario generator for Trade2
         char action = ' ';
@@ -289,7 +333,13 @@ public class TradeScenarioServlet extends HttpServlet {
             ctx.getRequestDispatcher(dispPath).include(req, resp);
             break;
         } // end of switch statement
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeScenarioServlet.java::com.ibm.websphere.samples.daytrader.web.TradeScenarioServlet::performTask(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
     // URL Path Prefix for dispatching to TradeAppServlet
     private static final String tasPathPrefix = "/app?action=";

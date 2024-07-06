@@ -47,6 +47,10 @@ public class TradeAppServlet extends HttpServlet {
      */
     @Override
     public void init(ServletConfig config) throws ServletException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::init(ServletConfig)|");
+
         super.init(config);
         java.util.Enumeration<String> en = config.getInitParameterNames();
         while (en.hasMoreElements()) {
@@ -60,7 +64,13 @@ public class TradeAppServlet extends HttpServlet {
         } catch (Exception e) {
             Log.error(e, "TradeAppServlet:init -- Error initializing TradeDirect");
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::init(ServletConfig)|");
+}
+}
 
     /**
      * Returns a string that contains information about TradeScenarioServlet
@@ -69,8 +79,18 @@ public class TradeAppServlet extends HttpServlet {
      */
     @Override
     public java.lang.String getServletInfo() {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::getServletInfo()|");
+
         return "TradeAppServlet provides the standard web interface to Trade";
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::getServletInfo()|");
+}
+}
 
     /**
      * Process incoming HTTP GET requests
@@ -82,8 +102,18 @@ public class TradeAppServlet extends HttpServlet {
      */
     @Override
     public void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+
         performTask(request, response);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+}
+}
 
     /**
      * Process incoming HTTP POST requests
@@ -95,8 +125,18 @@ public class TradeAppServlet extends HttpServlet {
      */
     @Override
     public void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+
         performTask(request, response);
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)|");
+}
+}
 
     /**
      * Main service method for TradeAppServlet
@@ -107,6 +147,10 @@ public class TradeAppServlet extends HttpServlet {
      *            Object that encapsulates the response from the servlet
      */
     public void performTask(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+try {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Entering com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::performTask(HttpServletRequest, HttpServletResponse)|");
+
 
         String action = null;
         String userID = null;
@@ -186,6 +230,12 @@ public class TradeAppServlet extends HttpServlet {
             System.out.println("TradeAppServlet: Invalid Action=" + action);
             tsAction.doWelcome(ctx, req, resp, "TradeAppServlet: Invalid Action" + action);
         }
-    }
+    
+}
+finally {
+
+java.lang.System.err.println("|v2.0.0r45|"+java.lang.String.valueOf(java.lang.System.currentTimeMillis())+",["+java.lang.String.valueOf(java.lang.Thread.currentThread().getId())+"],"+"Exiting com.uniandes.miso.daytrader.monolith/daytrader-ee7-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java::com.ibm.websphere.samples.daytrader.web.TradeAppServlet::performTask(HttpServletRequest, HttpServletResponse)|");
+}
+}
 
 }
